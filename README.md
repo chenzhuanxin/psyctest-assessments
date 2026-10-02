@@ -2,6 +2,8 @@
 
 一个**配置驱动**的选择题测评项目：411 个测评主题、10,875 道原创题目、1,265 个测量维度、3,986 个分数段解读，全部打包为可离线双击打开的单文件网页，并附总集成导航页与 Excel 题库配置表。
 
+> **在线体验**：<https://chenzhuanxin.github.io/psyctest-assessments/>（GitHub Pages，已启用 HTTPS）
+
 ## 目录结构
 
 ```
