@@ -1,0 +1,879 @@
+{
+ "id": 269,
+ "domain": "认知与能力",
+ "theme": "专注力",
+ "style": "频率自评",
+ "questions": [
+  {
+   "no": 1,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我能连续阅读半小时以上而不走神。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 2,
+   "type": "单选",
+   "dim": "D1",
+   "text": "做一件事时，我能保持投入直到阶段性完成。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 3,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我做事经常做到一半就转去做别的事情。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 4,
+   "type": "单选",
+   "dim": "D1",
+   "text": "听较长的课程或会议时，我能跟住主线内容。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 5,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我工作一会儿就忍不住拿起手机刷一下。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 6,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我能在同一个任务上长时间保持状态直到完成。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 7,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我经常任务进行到一半就忘了原本的目标。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 8,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我能在安静环境中连续学习两个小时。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 9,
+   "type": "单选",
+   "dim": "D1",
+   "text": "长时间用脑之后，我仍能维持注意的质量。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 10,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我常常开始一件事没多久就感到倦怠想停。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 11,
+   "type": "单选",
+   "dim": "D2",
+   "text": "窗外的噪音很少能打断我的思路。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 12,
+   "type": "单选",
+   "dim": "D2",
+   "text": "手机放在旁边时，我很难忍住不去看它。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 13,
+   "type": "单选",
+   "dim": "D2",
+   "text": "别人讲话的声音不会让我分心太久。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 14,
+   "type": "单选",
+   "dim": "D2",
+   "text": "突然的动静会让我好几分钟回不过神来。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 15,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我能屏蔽通知提示，专注做完手头的事情。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 16,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我常被脑海里冒出的杂念带跑。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 17,
+   "type": "单选",
+   "dim": "D2",
+   "text": "工作时我能对无关的信息视而不见。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 18,
+   "type": "单选",
+   "dim": "D2",
+   "text": "开放式办公环境会让我几乎无法专注。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 19,
+   "type": "单选",
+   "dim": "D2",
+   "text": "被打断之后，我能较快回到原来的任务上。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 20,
+   "type": "单选",
+   "dim": "D3",
+   "text": "开始任务之前，我会先清除桌面上的干扰物。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 21,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我会给自己设定不受打扰的专注时段。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 22,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我总是拖到最后一刻才勉强开始动手。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 23,
+   "type": "单选",
+   "dim": "D3",
+   "text": "进入专注状态后，我几乎注意不到时间流逝。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 24,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我经常一边做事一边同时开着多个任务。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 25,
+   "type": "单选",
+   "dim": "D3",
+   "text": "做重要任务前，我会关闭无关的网页和软件。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 26,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我很难长时间沉浸在一项活动之中。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 27,
+   "type": "单选",
+   "dim": "D3",
+   "text": "完成阶段性目标后，我会及时给自己反馈。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 28,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我能为重要任务主动营造合适的专注环境。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  }
+ ],
+ "dimensions": [
+  {
+   "code": "D1",
+   "name": "注意持久",
+   "desc": "在单个任务上维持投入的时间长度与稳定性",
+   "bands": [
+    {
+     "min": 10,
+     "max": 18,
+     "level": "低位",
+     "analysis": "注意维持的时间偏短，任务常常做到一半就发生转移，长时间任务的后半段质量下滑明显。",
+     "advice": "从十五分钟专注加五分钟休息的循环练起，用计时器把每一段的实际专注时长记录并可视化。"
+    },
+    {
+     "min": 19,
+     "max": 29,
+     "level": "中位",
+     "analysis": "能够维持基本的连续投入，但在疲劳或任务枯燥的时候中断频率上升，后劲显得略有不足。",
+     "advice": "把长任务切成有明确产出的段落，每段结束时用一句话记录进展，降低中途弃置的可能性。"
+    },
+    {
+     "min": 30,
+     "max": 40,
+     "level": "高位",
+     "analysis": "注意力持久而稳定，能够长时间锁定目标而不发生漂移，这是开展深度工作的重要基础条件。",
+     "advice": "把最消耗认知的任务安排在自己状态最好的黄金时段完成，同时注意定期休息保护长期状态。"
+    }
+   ]
+  },
+  {
+   "code": "D2",
+   "name": "抗干扰力",
+   "desc": "抵御环境、设备与杂念干扰并快速回归的能力",
+   "bands": [
+    {
+     "min": 9,
+     "max": 17,
+     "level": "低位",
+     "analysis": "对手机、声响和内心的杂念都高度敏感，一旦被中途打断，就需要很久才能重新进入状态。",
+     "advice": "先从物理隔离做起，工作时把手机放到另一个房间并戴上耳塞，被打断后先写下行进位置。"
+    },
+    {
+     "min": 18,
+     "max": 26,
+     "level": "中位",
+     "analysis": "一般强度的干扰可以扛住，但遇到高强度诱惑或连续中断时防线容易失守，回归速度一般。",
+     "advice": "固定使用勿扰模式与通知白名单，并为自己高频遇到的干扰各准备一句简短的自我提醒话术。"
+    },
+    {
+     "min": 27,
+     "max": 36,
+     "level": "高位",
+     "analysis": "能够在嘈杂与充满诱惑的环境中保持思路连续，即使被打断也能迅速接回原来的任务线程。",
+     "advice": "可以尝试在开放环境中训练更高难度的任务，但不要把硬扛干扰当作日常的工作习惯方式。"
+    }
+   ]
+  },
+  {
+   "code": "D3",
+   "name": "投入管理",
+   "desc": "为专注创造条件并进入沉浸状态的水平",
+   "bands": [
+    {
+     "min": 9,
+     "max": 17,
+     "level": "低位",
+     "analysis": "很少主动为专注创造条件，常常多任务并行、拖沓启动，因此很难体验到深度沉浸的状态。",
+     "advice": "每天优先挑一件最重要的事，提前清场、关闭无关网页、定好终点，用固定仪式帮助启动。"
+    },
+    {
+     "min": 18,
+     "max": 26,
+     "level": "中位",
+     "analysis": "偶尔能够进入深度投入的状态，但启动拖延与多任务并行切换的习惯消耗了不少可用精力。",
+     "advice": "实行单任务时段制，一次只打开一个窗口做一件事，等全部完成后再处理收尾与次要事项。"
+    },
+    {
+     "min": 27,
+     "max": 36,
+     "level": "高位",
+     "analysis": "善于设计专注的环境并能快速沉浸其中，经常在心流状态下高质量地完成重要的工作任务。",
+     "advice": "把有效的启动仪式记录下来反复复用，同时留意身体发出的强度信号，防止沉浸变成透支。"
+    }
+   ]
+  }
+ ],
+ "code": "P269"
+}

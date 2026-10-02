@@ -1,0 +1,935 @@
+{
+ "id": 229,
+ "domain": "心理健康",
+ "theme": "安全感（马斯洛）",
+ "style": "频率自评",
+ "questions": [
+  {
+   "no": 1,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我相信身边的人大体是善意可靠的。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 2,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我常担心自己会被亲近的人抛弃或背叛。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 3,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我在需要帮助的时候确信有人愿意帮忙。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 4,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我在别人态度稍冷时就怀疑自己做错了事。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 5,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我在朋友或伴侣面前可以放心做自己。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 6,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我习惯先怀疑别人的动机，再考虑别的可能。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 7,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我在集体中感到自己是被接纳的一员。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 8,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我常小心翼翼地维护关系，生怕对方不快。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 9,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我在与人发生分歧时不担心关系破裂。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 10,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我觉得真正可以信任的人几乎不存在。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 11,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我对生活有基本的掌控感，心里踏实。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 12,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我会因计划外的变化而感到强烈不安。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 13,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我相信遇到意外时，自己有能力去应对。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 14,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我常为还没发生的坏事提前担忧。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 15,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我一个人在家或夜里出门也不会莫名害怕。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 16,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我常觉得灾祸离自己很近，放松不下来。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 17,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我面对不确定的前景仍能安心过好当下。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 18,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我常担心自己或家人会遭遇不测。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 19,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我觉得世界基本是可预测、讲规则的。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 20,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我在环境一变时就睡不踏实、心里发空。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 21,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我能坦然享受独处的时光。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 22,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我在没有人陪伴的时候会感到慌张无依。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 23,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我相信离开任何人，我都能好好生活。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 24,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我需要别人不断肯定，才能确认自己可以。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 25,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我在犯错之后相信自己仍有能力补救。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 26,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我常感到心里空落落的，说不清在怕什么。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 27,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我对自己的身体感受大体放心，不常疑病。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 28,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我在安静下来的时候反而容易坐立难安。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 29,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我能安心接受别人的好意，而不觉得亏欠。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 30,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我常担心自己被淘汰，随时会失去现有的一切。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  }
+ ],
+ "dimensions": [
+  {
+   "code": "D1",
+   "name": "人际与归属安全感",
+   "desc": "亲密与群体关系中的信任与归属感受",
+   "bands": [
+    {
+     "min": 10,
+     "max": 19,
+     "level": "低位",
+     "analysis": "人际安全感偏低，容易担忧被辜负、被冷落，常过度小心地维护关系，亲密与归属带来的安定感不足，建议关注。",
+     "advice": "选一段足够安全的关系练习表达真实需求，用小事验证信任；若不安全感长期影响亲密关系，建议寻求专业人士（心理咨询师/医生）评估。"
+    },
+    {
+     "min": 20,
+     "max": 29,
+     "level": "中位",
+     "analysis": "在多数关系里能安心，但关系出现距离或波动时，仍会较快触发自我怀疑和担心，需要练习稳住。",
+     "advice": "练习区分事实与解读，对方态度冷淡时先核实再下结论；固定维系几段可以安心示弱的关系。"
+    },
+    {
+     "min": 30,
+     "max": 40,
+     "level": "高位",
+     "analysis": "人际安全感充足，默认他人大体是善意的，敢于真实地表达自己，也相信关系经得起分歧考验。",
+     "advice": "继续用真诚去筛选和滋养自己的关系；你身上那份安定感，对焦虑的伙伴来说是很好的稳定器。"
+    }
+   ]
+  },
+  {
+   "code": "D2",
+   "name": "环境与确定感",
+   "desc": "对环境变化与未来不确定性的掌控感",
+   "bands": [
+    {
+     "min": 10,
+     "max": 19,
+     "level": "低位",
+     "analysis": "对未来与环境的不安偏重，变化容易引发强烈担忧，常为没发生的事预支焦虑，确定感不足，建议关注。",
+     "advice": "把担忧写成清单并区分可控与不可控，对可控项先做一件小事；若焦虑长期弥漫，建议寻求专业人士（心理咨询师/医生）评估。"
+    },
+    {
+     "min": 20,
+     "max": 29,
+     "level": "中位",
+     "analysis": "大体上能掌控自己的生活，但计划外的变化仍会带来波动，担忧在压力大的时期会明显增多。",
+     "advice": "为重要事项提前准备预案，以降低不确定性；练习正念呼吸，把注意力一次次拉回到当下。"
+    },
+    {
+     "min": 30,
+     "max": 40,
+     "level": "高位",
+     "analysis": "确定感扎实，能够容忍未知与变化，相信意外真的来时自己也能接得住，生活重心比较稳当。",
+     "advice": "把你的从容用在团队的变化期里；同时给自己保留一点必要的警觉，别让大意取代安全感。"
+    }
+   ]
+  },
+  {
+   "code": "D3",
+   "name": "自我安定感",
+   "desc": "独处与自我支撑带来的内在安定程度",
+   "bands": [
+    {
+     "min": 10,
+     "max": 19,
+     "level": "低位",
+     "analysis": "内在安定感不足，独处易慌、依赖外部肯定、安静下来反而不安，自我支撑系统偏弱，建议关注。",
+     "advice": "从短时间的独处练习开始，配一件舒缓的事；若空虚慌乱感长期持续，建议寻求专业人士（心理咨询师/医生）评估。"
+    },
+    {
+     "min": 20,
+     "max": 29,
+     "level": "中位",
+     "analysis": "能独处也能与人联结，但自我价值感仍有一部分依赖他人的反馈，压力之下容易自我动摇。",
+     "advice": "建立一份不依赖他人的自我安抚清单，比如运动、写作、散步；也要定期回顾并肯定自己的努力。"
+    },
+    {
+     "min": 30,
+     "max": 40,
+     "level": "高位",
+     "analysis": "内在根基相当稳固，独处的时候自在，接受好意也坦然，自我价值并不系于他人的评价之上。",
+     "advice": "继续守护好独处与联结之间的平衡；把你的稳定经验整理成方法，分享给身边需要的人参考。"
+    }
+   ]
+  }
+ ],
+ "code": "P229"
+}

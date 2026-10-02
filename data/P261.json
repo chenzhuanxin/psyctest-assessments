@@ -1,0 +1,795 @@
+{
+ "id": 261,
+ "domain": "情绪与压力管理",
+ "theme": "心理韧性（CD-RISC）",
+ "style": "频率自评",
+ "questions": [
+  {
+   "no": 1,
+   "type": "单选",
+   "dim": "D1",
+   "text": "认定的目标，我会坚持到达成或确认不可行。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 2,
+   "type": "单选",
+   "dim": "D1",
+   "text": "遇到挫折时，我会一次次尝试直到找到办法。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 3,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我做事有始有终，不轻易半途而废。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 4,
+   "type": "单选",
+   "dim": "D1",
+   "text": "无论多难，我都能让自己把该做的事做完。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 5,
+   "type": "单选",
+   "dim": "D1",
+   "text": "为了重要的事情，我能长期付出而不松劲。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 6,
+   "type": "单选",
+   "dim": "D1",
+   "text": "稍遇阻碍，我就会怀疑自己是不是走错了路。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 7,
+   "type": "单选",
+   "dim": "D1",
+   "text": "计划受挫后，我很难重新打起精神继续。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 8,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我常常在困难面前选择放弃。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 9,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我能承受为长远目标付出的单调与辛苦。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 10,
+   "type": "单选",
+   "dim": "D2",
+   "text": "环境或规则变化时，我能较快找到新的做法。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 11,
+   "type": "单选",
+   "dim": "D2",
+   "text": "面对突发状况，我能迅速重新安排生活。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 12,
+   "type": "单选",
+   "dim": "D2",
+   "text": "此路不通时，我习惯换个角度或路径尝试。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 13,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我能在不同角色和场合之间灵活切换。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 14,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我能把不愉快的经历转化为经验教训。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 15,
+   "type": "单选",
+   "dim": "D2",
+   "text": "一次变动就足以打乱我全部的生活节奏。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 16,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我很难适应新环境，总要适应很长时间。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 17,
+   "type": "单选",
+   "dim": "D2",
+   "text": "情况一变，我就不知所措。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 18,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我相信自己有能力解决生活中大多数难题。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 19,
+   "type": "单选",
+   "dim": "D3",
+   "text": "总体上，我对自己的能力和判断感到满意。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 20,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我相信事情坏到一定程度就会好转。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 21,
+   "type": "单选",
+   "dim": "D3",
+   "text": "遇到再糟的情况，我也相信总能做点什么。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 22,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我常觉得自己不如别人，什么都做不好。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 23,
+   "type": "单选",
+   "dim": "D3",
+   "text": "一想到未来可能的困难，我就感到无力。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 24,
+   "type": "单选",
+   "dim": "D3",
+   "text": "即使别人鼓励，我也很难相信自己做得到。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 25,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我对未来抱有期待，并愿意为之努力。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  }
+ ],
+ "dimensions": [
+  {
+   "code": "D1",
+   "name": "坚韧与坚持",
+   "desc": "面对挫折持续投入、不轻言放弃的程度",
+   "bands": [
+    {
+     "min": 9,
+     "max": 17,
+     "level": "低位",
+     "analysis": "挫折容易中断既定的行动，计划受阻后难以重启，坚持对目前的你来说是高耗能而非常态。",
+     "advice": "把目标缩到一周内可见成效的小单位，每完成一次就记录下来，用小的成功经验喂养耐力。"
+    },
+    {
+     "min": 18,
+     "max": 27,
+     "level": "中位",
+     "analysis": "能够坚持完成多数事情，但长期消耗型的任务会让你逐渐失去劲头，中途动摇的情况不少。",
+     "advice": "在长期目标中设置阶段性奖励和检查点，动摇时回看已完成的记录，让进度可视化地稳住自己。"
+    },
+    {
+     "min": 28,
+     "max": 36,
+     "level": "高位",
+     "analysis": "目标感强、耐得住长期消耗，挫折很少让你停下脚步，坚持已经内化为一种稳定的行事风格。",
+     "advice": "把韧性用在值得的目标上并定期校准方向，同时区分坚持与固执，为必要的转向留出余地。"
+    }
+   ]
+  },
+  {
+   "code": "D2",
+   "name": "适应与弹性",
+   "desc": "应对变化、转换路径并从中萃取经验的程度",
+   "bands": [
+    {
+     "min": 8,
+     "max": 15,
+     "level": "低位",
+     "analysis": "环境的变化容易让你一时无所适从，新环境要磨合很久，一次变动就可能打乱整体的生活节奏。",
+     "advice": "变化来临时先保住作息与核心事务这两块基本盘，再逐步调整其余部分，从而降低适应负荷。"
+    },
+    {
+     "min": 16,
+     "max": 24,
+     "level": "中位",
+     "analysis": "能够在变化之后慢慢找到新的做法，但切换的速度有限，经验的转化多停留在感受的层面。",
+     "advice": "每次适应期结束后做一次简短复盘，写下有效的做法和踩过的坑，形成可复用的应变清单。"
+    },
+    {
+     "min": 25,
+     "max": 32,
+     "level": "高位",
+     "analysis": "对变化的反应敏捷，能够快速重组安排并灵活地更换路径，不愉快的经历也常被你转化成养分。",
+     "advice": "继续保持对变化的开放姿态，在稳定与灵活之间留好平衡，避免频繁变动带来的隐性消耗。"
+    }
+   ]
+  },
+  {
+   "code": "D3",
+   "name": "乐观与自信",
+   "desc": "自我效能感、积极预期与自我肯定的程度",
+   "bands": [
+    {
+     "min": 8,
+     "max": 15,
+     "level": "低位",
+     "analysis": "对自身能力的评价整体偏低，想到未来的困难容易引发无力感，外界的肯定也较难进入心里。",
+     "advice": "每天记录一件自己做成的小事并写下用到的能力，用具体证据逐步修正对自己的整体判断。"
+    },
+    {
+     "min": 16,
+     "max": 24,
+     "level": "中位",
+     "analysis": "整体上信任自己，但评价随结果起伏，遇到顺境时自信上升，受挫后又容易滑向自我怀疑。",
+     "advice": "把自信锚定在过程而非结果上，建立能力清单定期回顾，减弱单次成败对自我评价的冲击。"
+    },
+    {
+     "min": 25,
+     "max": 32,
+     "level": "高位",
+     "analysis": "自我效能感比较稳定，对未来抱有现实层面的期待，身处困境时仍相信自己总能做点什么。",
+     "advice": "继续以行动喂养自己的信心，并留意乐观的边界，对高风险事项保持审慎评估，避免盲目自信。"
+    }
+   ]
+  }
+ ],
+ "code": "P261"
+}

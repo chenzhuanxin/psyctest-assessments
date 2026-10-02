@@ -1,0 +1,935 @@
+{
+ "id": 221,
+ "domain": "心理健康",
+ "theme": "大学生心理健康（UPI）",
+ "style": "频率自评",
+ "questions": [
+  {
+   "no": 1,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我最近的心情总体上是比较轻松愉快的。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 2,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我会为一些小事突然烦躁，很难马上平静下来。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 3,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我能在不愉快的事情发生后较快恢复平静。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 4,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我常常说不出原因就觉得情绪低落。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 5,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我容易紧张不安，心里像一直绷着一根弦。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 6,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我仍然能从平时喜欢的活动中获得乐趣。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 7,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我会有独自掉泪或想放声大哭的时刻。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 8,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我对接下来一学期的生活抱有期待。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 9,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我会莫名心慌，坐也不是站也不是。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 10,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我觉得自己能够处理好日常的情绪起伏。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 11,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我能跟上目前的课程节奏和学习任务。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 12,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我常常在该完成的学习任务上拖延逃避。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 13,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我能把作息、饮食等日常生活安排得比较好。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 14,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我觉得自己基本适应了当前的学习生活环境。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 15,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我在课堂发言或小组讨论时很难开口表达。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 16,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我在需要帮助时愿意向老师同学开口求助。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 17,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我常感到学业压力很大，快要喘不过气来。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 18,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我和室友或同学相处得比较融洽。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 19,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我一想到毕业和出路就会感到迷茫无措。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 20,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我对目前的课余生活感到充实而有安排。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 21,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我入睡困难，或夜里容易醒来睡不踏实。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 22,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我白天上课时通常头脑清醒、精力尚可。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 23,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我常感到头痛、肩颈发紧等身体不适。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 24,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我的食欲和饭量与平时相比没有明显变化。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 25,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我常觉得累，休息之后也很难缓过来。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 26,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我会出现心慌、胸闷或手脚出汗增多的情况。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 27,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我的睡眠时长和早晨起床后的状态基本正常。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 28,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我身体稍有不舒服就容易往坏处想。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 29,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我适度运动或散步之后会感觉身心舒畅。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 30,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我很在意近期气色或体重的明显变化。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  }
+ ],
+ "dimensions": [
+  {
+   "code": "D1",
+   "name": "情绪状态",
+   "desc": "近期情绪基调、负面情绪出现频率与恢复能力",
+   "bands": [
+    {
+     "min": 10,
+     "max": 19,
+     "level": "低位",
+     "analysis": "负面情绪出现频繁而密集，低落、紧张、心慌常轮番出现，恢复较慢，可能已经影响到上课和日常生活状态。",
+     "advice": "先把睡眠和三餐稳住，把烦心事写下来并告诉一位信任的人；若低落紧张持续两周以上，建议寻求专业人士（心理咨询师/医生）评估。"
+    },
+    {
+     "min": 20,
+     "max": 29,
+     "level": "中位",
+     "analysis": "情绪总体平稳，但考试、人际等压力点会带来明显波动，自我调节需要时间，偶尔会陷入内耗。",
+     "advice": "保持规律运动和正常的社交节奏，练习用深呼吸、写情绪日记等方式缩短坏心情停留的时间。"
+    },
+    {
+     "min": 30,
+     "max": 40,
+     "level": "高位",
+     "analysis": "情绪基调积极稳定，能从喜欢的事情中获得乐趣，遇到波动也能较快恢复，心理弹性比较好。",
+     "advice": "把运动、倾诉、兴趣爱好等已经有效的调节方式固定成习惯，也可以在同学状态不好时主动给予支持。"
+    }
+   ]
+  },
+  {
+   "code": "D2",
+   "name": "学业与生活适应",
+   "desc": "学业投入、生活秩序与人际融入的顺畅程度",
+   "bands": [
+    {
+     "min": 10,
+     "max": 19,
+     "level": "低位",
+     "analysis": "学业与生活节奏明显失衡，拖延、压力感和迷茫感交织，人际上偏向退缩，适应状态亮起黄灯，建议引起关注。",
+     "advice": "从最小的一件事入手重建节奏，比如固定起床时间和每天两小时专注学习；持续受挫时建议到学校心理中心或专业机构聊一聊。"
+    },
+    {
+     "min": 20,
+     "max": 29,
+     "level": "中位",
+     "analysis": "大体能跟上课程与生活，但任务扎堆或计划变化时容易慌乱，学习投入度和内心从容感存在起伏。",
+     "advice": "用周计划把任务拆小，给学习留出固定时段；主动参加一两个社团或学习小组，在集体中积累归属感。"
+    },
+    {
+     "min": 30,
+     "max": 40,
+     "level": "高位",
+     "analysis": "适应状态良好，学业有节奏、生活有秩序，人际融入自然，遇到困难也愿意主动向他人求助。",
+     "advice": "维持现有的作息与任务管理方式，把有效经验整理成个人清单；有余力时可以帮一帮身边有需要的同学。"
+    }
+   ]
+  },
+  {
+   "code": "D3",
+   "name": "身体与睡眠",
+   "desc": "睡眠质量、精力水平与躯体不适信号的多寡",
+   "bands": [
+    {
+     "min": 10,
+     "max": 19,
+     "level": "低位",
+     "analysis": "睡眠和躯体信号较多，入睡困难、易醒、疲惫、心慌胸闷等情况反复出现，身体已在提示需要认真休整，建议关注。",
+     "advice": "先固定作息并减少睡前屏幕时间，白天适度运动；若不适持续超过两周，建议寻求专业人士（心理咨询师/医生）评估。"
+    },
+    {
+     "min": 20,
+     "max": 29,
+     "level": "中位",
+     "analysis": "身体状态尚可，但疲劳容易累积，睡眠质量随学业压力起伏，休息之后的恢复速度一般，属于需要主动调整的中间地带。",
+     "advice": "每天留出一段固定的放松时间，睡前少想任务；每周安排三次以上运动，帮助身体把紧张释放出去。"
+    },
+    {
+     "min": 30,
+     "max": 40,
+     "level": "高位",
+     "analysis": "睡眠与精力状态良好，躯体不适少，运动和休息形成良性循环，身体与情绪配合得比较顺畅。",
+     "advice": "保持现有的睡眠节律和运动习惯，考试周也不要打破底线，让稳定的身体状态成为情绪的底盘。"
+    }
+   ]
+  }
+ ],
+ "code": "P221"
+}

@@ -1,0 +1,851 @@
+{
+ "id": 263,
+ "domain": "情绪与压力管理",
+ "theme": "危机应对",
+ "style": "频率自评",
+ "questions": [
+  {
+   "no": 1,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我会提前为重要事项准备备用方案。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 2,
+   "type": "单选",
+   "dim": "D1",
+   "text": "出门或出差前，我会检查关键物品和证件。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 3,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我了解住所或工作场所的应急通道和设施。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 4,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我会给重要资料做备份，以防丢失。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 5,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我会留意身边可能出问题的风险苗头。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 6,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我总觉得意外不会发生在我身上。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 7,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我从不为突发情况做任何准备。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 8,
+   "type": "单选",
+   "dim": "D1",
+   "text": "家里的常用药品和应急用品长期不补齐。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 9,
+   "type": "单选",
+   "dim": "D1",
+   "text": "重要的约定或事项，我不做任何容错安排。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 10,
+   "type": "单选",
+   "dim": "D2",
+   "text": "突发意外时，我能让自己先冷静下来再行动。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 11,
+   "type": "单选",
+   "dim": "D2",
+   "text": "紧急情况下，我能快速判断最优先要处理什么。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 12,
+   "type": "单选",
+   "dim": "D2",
+   "text": "出事时，我能清晰地向他人说明情况和需求。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 13,
+   "type": "单选",
+   "dim": "D2",
+   "text": "混乱场面中，我能听从指挥或主动组织大家行动。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 14,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我能在电话里冷静地向救援人员描述关键信息。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 15,
+   "type": "单选",
+   "dim": "D2",
+   "text": "遇到突发状况，我的第一反应是慌乱。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 16,
+   "type": "单选",
+   "dim": "D2",
+   "text": "紧急时刻，我常因紧张而忘记该做的事。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 17,
+   "type": "单选",
+   "dim": "D2",
+   "text": "出事时，我倾向于先埋怨而不是先处理。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 18,
+   "type": "单选",
+   "dim": "D2",
+   "text": "面对危急场面，我常常呆在原地不知如何是好。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 19,
+   "type": "单选",
+   "dim": "D3",
+   "text": "事情平息后，我会复盘原因并记下改进点。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 20,
+   "type": "单选",
+   "dim": "D3",
+   "text": "经历危机后，我会调整安排以降低再次发生的可能。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 21,
+   "type": "单选",
+   "dim": "D3",
+   "text": "危机过后，我能较快让生活回到正轨。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 22,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我会向有经验的人请教，补上自己的短板。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 23,
+   "type": "单选",
+   "dim": "D3",
+   "text": "波折过后，我和身边人的关系反而更紧密。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 24,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我能从处理危机的经历中积累自信。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 25,
+   "type": "单选",
+   "dim": "D3",
+   "text": "危机结束后，我只想尽快忘掉，不愿再提起。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 26,
+   "type": "单选",
+   "dim": "D3",
+   "text": "一次事故或变故会让我长时间惶恐不安。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 27,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我不习惯总结教训，同样的问题常再次出现。",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  }
+ ],
+ "dimensions": [
+  {
+   "code": "D1",
+   "name": "危机意识与预案",
+   "desc": "对风险的警觉与事前准备的充分程度",
+   "bands": [
+    {
+     "min": 9,
+     "max": 17,
+     "level": "低位",
+     "analysis": "对潜在风险缺少必要的关注，习惯假定一切顺利，关键事项几乎不留容错空间，遇事容易被动。",
+     "advice": "从建立三份清单开始：随身物品清单、家庭应急用品与重要资料备份，每月核对一次即可。"
+    },
+    {
+     "min": 18,
+     "max": 27,
+     "level": "中位",
+     "analysis": "具备一定的风险意识，重要的事项会提前做一些准备，但覆盖面有限，冷门环节常成为漏洞。",
+     "advice": "为最担心的两三种情境分别写出应对步骤，并检查备用方案是否真的可执行，而非纸上谈兵。"
+    },
+    {
+     "min": 28,
+     "max": 36,
+     "level": "高位",
+     "analysis": "风险警觉性高，预案与备份已经成为习惯，事前充分的准备让你在危机中拥有更多主动权。",
+     "advice": "定期演练并及时更新预案，防止纸面上的准备悄然失效，同时避免过度防备带来的精神内耗。"
+    }
+   ]
+  },
+  {
+   "code": "D2",
+   "name": "临场冷静与处置",
+   "desc": "危机发生时的镇定程度与处置效率",
+   "bands": [
+    {
+     "min": 9,
+     "max": 17,
+     "level": "低位",
+     "analysis": "突发的状况容易让你慌乱失措，忘记该做的事或原地僵住，临场的判断与沟通都会打折扣。",
+     "advice": "熟记三条通用的步骤：先保证安全、再呼救报告、后处理细节，并用深呼吸训练降低慌乱。"
+    },
+    {
+     "min": 18,
+     "max": 27,
+     "level": "中位",
+     "analysis": "多数突发情况都能够应对，但在高强度场面下仍会紧张变形，沟通与判断的稳定性有待提高。",
+     "advice": "针对最可能遇到的紧急场景提前做情景演练，把关键动作练成本能，紧张时按程序执行即可。"
+    },
+    {
+     "min": 28,
+     "max": 36,
+     "level": "高位",
+     "analysis": "危机中能迅速冷静下来，分清轻重缓急并有效沟通，甚至能组织他人共同应对，临场素质突出。",
+     "advice": "发挥这份镇定去承担现场协调的角色，同时学习更系统的应急知识，让经验逐步升级为能力。"
+    }
+   ]
+  },
+  {
+   "code": "D3",
+   "name": "复盘与恢复",
+   "desc": "危机过后的总结、修复与心理恢复能力",
+   "bands": [
+    {
+     "min": 9,
+     "max": 17,
+     "level": "低位",
+     "analysis": "危机过后倾向于回避回忆，缺少系统的总结，同类问题容易反复出现，心理余震也持续较久。",
+     "advice": "等情绪稍稳后再做一次书面复盘，只记录事实与改进点，把注意力从后怕转向可控的调整。"
+    },
+    {
+     "min": 18,
+     "max": 27,
+     "level": "中位",
+     "analysis": "能够逐步恢复正轨并做出一些调整，但总结常不够系统，危机带来的不安仍会间歇性浮现。",
+     "advice": "把复盘沉淀成改进清单并落实到生活安排中，同时与经历过类似事件的人交流，减轻心理余波。"
+    },
+    {
+     "min": 28,
+     "max": 36,
+     "level": "高位",
+     "analysis": "善于从危机中提炼经验并落实改进，生活恢复得快，还能与身边的人因此建立更深的联结。",
+     "advice": "保持复盘与恢复的节奏，把危机经验整理成方法分享给家人同事，提升整体的风险应对水平。"
+    }
+   ]
+  }
+ ],
+ "code": "P263"
+}

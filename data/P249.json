@@ -1,0 +1,767 @@
+{
+ "id": 249,
+ "domain": "情绪与压力管理",
+ "theme": "敌对情绪",
+ "style": "频率自评",
+ "questions": [
+  {
+   "no": 1,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我觉得身边很多人都是自私的",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 2,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我愿意相信别人大都没有恶意",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 3,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我对别人的好意常怀疑另有目的",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 4,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我觉得这个世界总体是友善的",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 5,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我在陌生人靠近时会先想到坏处",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 6,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我能理解与自己立场不同的人",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 7,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我常觉得有人存心跟我过不去",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 8,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我在别人道歉时能比较容易接受",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 9,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我会在心里埋怨让我不爽的人",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 10,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我很少和身边的人发生正面冲突",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 11,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我会用刻薄话回应冒犯我的人",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 12,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我在被亏待时会找机会还以颜色",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 13,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我能直接而不带敌意地表达异议",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 14,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我对看不惯的人会冷嘲热讽",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 15,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我遇到矛盾时倾向沟通而非对抗",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 16,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我觉得对某些人就该以牙还牙",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 17,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我会为多年前的旧事耿耿于怀",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 18,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我能够放下别人对我的亏欠",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 19,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我常记得谁对不起我不肯翻篇",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 20,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我在不满过后能够让自己释然",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 21,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我见不得别人过得比我好太多",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 22,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我能真诚地为别人的成功高兴",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 23,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我一想起某些人仍会怒气上头",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 24,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我相信多数矛盾都能被化解",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  }
+ ],
+ "dimensions": [
+  {
+   "code": "D1",
+   "name": "信任与善意",
+   "desc": "对他人意图的基本假设，是默认防备还是愿意信任",
+   "bands": [
+    {
+     "min": 8,
+     "max": 15,
+     "level": "低位",
+     "analysis": "防备是默认的模式，他人的好意容易被解读为另有所图，长期的警惕会悄悄消耗你的心理能量。",
+     "advice": "先做一次证据检验：把觉得别人有恶意的场景写下来，逐条找支持与反对的证据，给善意留一次验证的机会。"
+    },
+    {
+     "min": 16,
+     "max": 24,
+     "level": "中位",
+     "analysis": "基本的信任还在，但被辜负的经历会阶段性地放大戒心，让信任的发放变得挑剔而缓慢下来。",
+     "advice": "区分场景与人，一次背叛不等于所有人有恶意；从低风险的小信任开始重新练习，如请同事帮个小忙。"
+    },
+    {
+     "min": 25,
+     "max": 32,
+     "level": "高位",
+     "analysis": "对他人的意图持善意的假设，能够理解不同的立场，接受道歉也不费力，内心的防区也不算大。",
+     "advice": "保持善意的底色，同时保留住基本的边界意识，信任加核验的组合比全盘相信要更可持续。"
+    }
+   ]
+  },
+  {
+   "code": "D2",
+   "name": "敌意表达度",
+   "desc": "不满与冲突的输出方式，是沟通化解还是对抗回击",
+   "bands": [
+    {
+     "min": 8,
+     "max": 15,
+     "level": "低位",
+     "analysis": "敌意输出比较频繁，冷嘲热讽或者以牙还牙可能成为习惯反应，冲突容易升级且磨损重要关系。",
+     "advice": "把回击延迟十秒，先用事实句替代讽刺句；如冲突频繁到影响工作生活，建议寻求专业人士（心理咨询师）支持。"
+    },
+    {
+     "min": 16,
+     "max": 24,
+     "level": "中位",
+     "analysis": "多数的不满会走沟通路线解决，但被踩到底线时对抗模式就会接管，表达里偶尔会带上刺。",
+     "advice": "为底线场景准备一套表达模板：先说事实，再说影响，最后说期待，避免情绪滑向人身攻击。"
+    },
+    {
+     "min": 25,
+     "max": 32,
+     "level": "高位",
+     "analysis": "异议能以不带敌意的方式表达出来，冲突多被控制在讨论的层面，人际关系的磨损也比较小。",
+     "advice": "继续做化解矛盾的示范者，同时留意别把回避冲突当作和平，必要时据理力争也是健康表达。"
+    }
+   ]
+  },
+  {
+   "code": "D3",
+   "name": "怨恨与释怀",
+   "desc": "旧账与不满的滞留时间，能否翻篇并真心祝福他人",
+   "bands": [
+    {
+     "min": 8,
+     "max": 15,
+     "level": "低位",
+     "analysis": "旧账的库存偏多，多年前的委屈仍会被翻炒，别人的好运有时会刺痛你，怨恨占用内心内存。",
+     "advice": "给怨恨做一次清理：写下最占内存的三件事，问自己继续背负得到什么；如长期难以释怀，建议寻求专业人士帮助。"
+    },
+    {
+     "min": 16,
+     "max": 24,
+     "level": "中位",
+     "analysis": "多数的不满能随时间淡化，但特定的人和事仍是翻不过去的页面，偶尔还会拿出来翻一翻晒一晒。",
+     "advice": "把翻篇当作是给自己松绑而不是原谅对方，再练习写感恩记录来平衡记忆里的负面库存积累。"
+    },
+    {
+     "min": 25,
+     "max": 32,
+     "level": "高位",
+     "analysis": "心结代谢良好，能放下亏欠也能欣赏他人的成功，心里的存货很轻，日子过得开阔又敞亮。",
+     "advice": "保持释怀的习惯，把这段能力讲给正在较劲的朋友听；也允许自己偶尔不平，情绪需要出口而非审判。"
+    }
+   ]
+  }
+ ],
+ "code": "P249"
+}

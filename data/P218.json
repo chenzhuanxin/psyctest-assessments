@@ -1,0 +1,1831 @@
+{
+ "id": 218,
+ "domain": "心理健康",
+ "theme": "综合心理筛查（SCL-90）",
+ "style": "频率自评",
+ "questions": [
+  {
+   "no": 1,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我经常感到头痛或头昏脑涨",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 2,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我常感到身体某些部位不适",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 3,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我容易感到心慌或胸口发闷",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 4,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我常感到胃部不适或胃口不好",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 5,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我容易感到肌肉酸痛或身体紧绷",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 6,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我经常感到全身疲倦、没有力气",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 7,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我入睡困难或睡眠质量比较差",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 8,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我做梦比较多且影响休息质量",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 9,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我常在半夜醒来后难以再入睡",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 10,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我的身体大部分时间感觉良好",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 11,
+   "type": "单选",
+   "dim": "D1",
+   "text": "体检提示的异常会让我反复担忧",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 12,
+   "type": "单选",
+   "dim": "D1",
+   "text": "白天不忙时我经常昏昏欲睡",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 13,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我的食欲和睡眠一直比较正常",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 14,
+   "type": "单选",
+   "dim": "D1",
+   "text": "天气变化或劳累会让我身体不适明显",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 15,
+   "type": "单选",
+   "dim": "D1",
+   "text": "我很少因身体不舒服而中断计划",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 16,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我常感到闷闷不乐、提不起兴致",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 17,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我对自己的前途常常感到悲观",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 18,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我容易无缘无故地感到害怕",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 19,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我常感到紧张不安或坐立不宁",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 20,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我比从前更容易哭泣或想哭",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 21,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我时常感到孤独、缺少知心同伴",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 22,
+   "type": "单选",
+   "dim": "D2",
+   "text": "遇到问题我常常首先责怪自己",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 23,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我对以前感兴趣的事失去兴趣",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 24,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我感到坐卧不宁、难以平静",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 25,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我容易情绪低落且持续较久",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 26,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我的心情总体上是平稳愉快的",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 27,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我能从日常小事中感到快乐",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 28,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我对未来的生活始终抱有希望",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 29,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我常为一些事情担忧得过了头",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 30,
+   "type": "单选",
+   "dim": "D2",
+   "text": "我感到自己精力旺盛、情绪饱满",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 31,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我觉得别人不理解或不喜欢我",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 32,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我在人多的场合感到不自在",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 33,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我对别人的批评或议论特别敏感",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 34,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我容易和别人发生争执或冲突",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 35,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我很难主动去结识新的朋友",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 36,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我常怀疑别人在议论或针对我",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 37,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我觉得与人交往是一件费神的事",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 38,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我不愿把自己的想法告诉别人",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 39,
+   "type": "单选",
+   "dim": "D3",
+   "text": "别人的目光会让我感到紧张",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 40,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我能较轻松地与人建立联系",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 41,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我常感到别人对我的态度忽冷忽热",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 42,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我能坦然表达自己的不同意见",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 43,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我觉得大多数人是可以信任的",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 44,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我会反复回想与人交往中的细节",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 45,
+   "type": "单选",
+   "dim": "D3",
+   "text": "我能积极参与各种集体活动",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 46,
+   "type": "单选",
+   "dim": "D4",
+   "text": "我会反复回忆一些没有必要的事",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 47,
+   "type": "单选",
+   "dim": "D4",
+   "text": "我常担心自己忘记重要的事情",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 48,
+   "type": "单选",
+   "dim": "D4",
+   "text": "我做事必须反复检查才能放心",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 49,
+   "type": "单选",
+   "dim": "D4",
+   "text": "一些不想要的念头会闯入我的脑海",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 50,
+   "type": "单选",
+   "dim": "D4",
+   "text": "我很难长时间集中注意力做事",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 51,
+   "type": "单选",
+   "dim": "D4",
+   "text": "记忆力的下降让我感到苦恼",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 52,
+   "type": "单选",
+   "dim": "D4",
+   "text": "做决定时我常常反复犹豫不决",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 53,
+   "type": "单选",
+   "dim": "D4",
+   "text": "我会反复纠结已经做过的小事",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 54,
+   "type": "单选",
+   "dim": "D4",
+   "text": "我常感到脑子昏沉、思维不清",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  },
+  {
+   "no": 55,
+   "type": "单选",
+   "dim": "D4",
+   "text": "我能较快地从纠结中抽身出来",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 56,
+   "type": "单选",
+   "dim": "D4",
+   "text": "我办事干脆、很少反复犹疑",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 57,
+   "type": "单选",
+   "dim": "D4",
+   "text": "我很少忘记带钥匙或关灯之类的事",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 58,
+   "type": "单选",
+   "dim": "D4",
+   "text": "我能一心一意地完成手头的事",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 59,
+   "type": "单选",
+   "dim": "D4",
+   "text": "需要做决定时我能及时拿定主意",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 4
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 3
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 2
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 1
+    }
+   ]
+  },
+  {
+   "no": 60,
+   "type": "单选",
+   "dim": "D4",
+   "text": "我常因琐碎的担忧占用不少时间",
+   "options": [
+    {
+     "label": "A",
+     "text": "从不",
+     "score": 1
+    },
+    {
+     "label": "B",
+     "text": "偶尔",
+     "score": 2
+    },
+    {
+     "label": "C",
+     "text": "经常",
+     "score": 3
+    },
+    {
+     "label": "D",
+     "text": "总是",
+     "score": 4
+    }
+   ]
+  }
+ ],
+ "dimensions": [
+  {
+   "code": "D1",
+   "name": "躯体与睡眠",
+   "desc": "身体不适感与睡眠问题的频率和困扰程度",
+   "bands": [
+    {
+     "min": 15,
+     "max": 26,
+     "level": "低位",
+     "analysis": "你的身体状态与睡眠基本良好，不适感轻微且偶发，食欲与精力维持在正常水平，这是值得留意的身心信号。",
+     "advice": "继续保持规律作息和适度运动，每年常规体检即可，不必对偶尔的不适过度关注，定期回顾并调整具体做法。"
+    },
+    {
+     "min": 27,
+     "max": 38,
+     "level": "中位",
+     "analysis": "你存在一些反复出现的身体不适或睡眠困扰，虽未明显影响功能，但值得调整生活方式，它常与近期的生活节奏有关。",
+     "advice": "先做一次体检排除生理原因，再规律运动、固定睡眠时间；记录不适出现的时间与情境，找出规律。"
+    },
+    {
+     "min": 39,
+     "max": 50,
+     "level": "偏高",
+     "analysis": "躯体不适与睡眠问题频繁且多样，身体长期紧绷或疲惫，情绪也常被牵动，建议寻求专业人士（心理咨询师/医生）评估。",
+     "advice": "请先就医排查躯体疾病，再考虑心理因素的影响；降低工作强度，把睡眠和三餐放在优先位置。"
+    },
+    {
+     "min": 51,
+     "max": 60,
+     "level": "高位",
+     "analysis": "多种躯体不适与睡眠问题长期并存且程度较重，日常功能明显受累，建议寻求专业人士（心理咨询师/医生）评估。",
+     "advice": "请尽快到医疗机构进行系统检查与评估，不要拖延；同时向家人说明状况，近期减少负担、优先休养。"
+    }
+   ]
+  },
+  {
+   "code": "D2",
+   "name": "情绪与心境",
+   "desc": "抑郁、焦虑等情绪症状的强度与持续时间",
+   "bands": [
+    {
+     "min": 15,
+     "max": 26,
+     "level": "低位",
+     "analysis": "你的情绪状态平稳积极，能从日常小事中获得快乐，对生活保持希望和兴致，整体功能未受明显影响。",
+     "advice": "维持现有的生活节奏与兴趣活动，遇到波动时用老办法自我调节，不必刻意改变，给身心恢复留出足够时间。"
+    },
+    {
+     "min": 27,
+     "max": 38,
+     "level": "中位",
+     "analysis": "你近期情绪有所波动，低落、紧张或自责时来时去，虽能正常生活但已有明显消耗，这类表现在人群中并不少见。",
+     "advice": "增加运动和社交等有恢复作用的活动，减少反刍式自责；把烦心事写下来逐条处理，缩短情绪停留时间。"
+    },
+    {
+     "min": 39,
+     "max": 50,
+     "level": "偏高",
+     "analysis": "低落、紧张或担忧的情绪频繁出现且持续较久，兴趣和精力下降，建议寻求专业人士（心理咨询师/医生）评估。",
+     "advice": "请考虑预约心理咨询或心理科评估，早干预效果更好；同时保持基本作息和与人接触，不要独自封闭。"
+    },
+    {
+     "min": 51,
+     "max": 60,
+     "level": "高位",
+     "analysis": "情绪困扰明显而持续，低落与紧张交织，生活兴致显著减退，建议寻求专业人士（心理咨询师/医生）评估。",
+     "advice": "请尽快寻求精神科或心理科的专业帮助，并告诉信任的人你的状况；近期降低自我要求，把恢复放在第一位。"
+    }
+   ]
+  },
+  {
+   "code": "D3",
+   "name": "人际与敏感",
+   "desc": "人际交往中的不自在感、敏感多疑与冲突倾向",
+   "bands": [
+    {
+     "min": 15,
+     "max": 26,
+     "level": "低位",
+     "analysis": "你在人际中整体自在，能信任他人并表达不同意见，社交是滋养而非负担，这是值得留意的身心信号。",
+     "advice": "继续保持主动联结的习惯，定期与朋友相处，把现有的支持系统维护好，定期回顾并调整具体做法。"
+    },
+    {
+     "min": 27,
+     "max": 38,
+     "level": "中位",
+     "analysis": "你在某些人际场合感到不自在，对批评较敏感，事后常反复回想互动细节，它常与近期的生活节奏有关。",
+     "advice": "练习把注意力放在谈话内容而非他人评价上，减少对细节的反复回放；从信任的人开始练习表达感受。"
+    },
+    {
+     "min": 39,
+     "max": 50,
+     "level": "偏高",
+     "analysis": "人际敏感与不自在感较重，多疑或回避增多，关系摩擦或疏远时有发生，建议寻求专业人士（心理咨询师/医生）评估。",
+     "advice": "先选择一两个安全的关系降低互动压力，同时考虑心理咨询，梳理敏感背后的期待与担忧。"
+    },
+    {
+     "min": 51,
+     "max": 60,
+     "level": "高位",
+     "analysis": "人际困扰明显，敏感、怀疑与疏离交织，社交已成为持续的负担，建议寻求专业人士（心理咨询师/医生）评估。",
+     "advice": "请尽快寻求专业心理帮助，人际困扰背后的不安是可以改善的；近期保留一到两段让自己安心的关系，避免彻底自我封闭。"
+    }
+   ]
+  },
+  {
+   "code": "D4",
+   "name": "认知行为与强迫",
+   "desc": "反复思虑、检查确认、注意与决断方面的困扰",
+   "bands": [
+    {
+     "min": 15,
+     "max": 26,
+     "level": "低位",
+     "analysis": "你的思维清晰、行事干脆，注意力稳定，反复纠结与检查的行为很少出现，这是值得留意的身心信号。",
+     "advice": "保持现有的专注与行动习惯，重要事项用清单管理，继续发挥你的执行优势，定期回顾并调整具体做法。"
+    },
+    {
+     "min": 27,
+     "max": 38,
+     "level": "中位",
+     "analysis": "你存在反复回忆、检查或犹豫的情况，注意力有所涣散，做事常被纠结拖慢，它常与近期的生活节奏有关。",
+     "advice": "给决定设时限、给检查设次数，到点即行动；用待办清单替代反复回忆，减少大脑的重复提醒。"
+    },
+    {
+     "min": 39,
+     "max": 50,
+     "level": "偏高",
+     "analysis": "反复思虑与确认行为较频繁，注意力和记忆力受到干扰，效率明显下降，建议寻求专业人士（心理咨询师/医生）评估。",
+     "advice": "请考虑心理咨询或心理科评估，反复行为可通过规范训练改善；先用清单和固定流程减轻大脑负担。"
+    },
+    {
+     "min": 51,
+     "max": 60,
+     "level": "高位",
+     "analysis": "强迫性思虑与行为明显，决断与专注严重受阻，日常事务被反复纠结占据，建议寻求专业人士（心理咨询师/医生）评估。",
+     "advice": "请尽快寻求专业评估与帮助，不要靠硬扛或不断重复来缓解；在专业指导下逐步恢复行动力，家人朋友的支持也很重要。"
+    }
+   ]
+  }
+ ],
+ "code": "P218"
+}

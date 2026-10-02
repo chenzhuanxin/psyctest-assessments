@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>心理测评 · 配置驱动单页应用</title>
+<style>
+/* ============ 设计令牌 ============ */
+:root{
+  --brand:#5b6bd6; --brand-2:#8b5cf6; --brand-3:#06b6d4;
+  --ok:#10b981; --warn:#f59e0b; --risk:#ef4444;
+  --bg:#f6f7fb; --bg-grad-1:#eef1ff; --bg-grad-2:#f7f0ff;
+  --surface:#ffffff; --surface-2:#f9fafb;
+  --text:#1a1d29; --text-2:#5b6170; --text-3:#9ca3af;
+  --line:#e5e7eb; --line-2:#eef0f4;
+  --shadow:0 1px 2px rgba(16,24,40,.04),0 8px 24px rgba(16,24,40,.06);
+  --shadow-lg:0 20px 50px rgba(30,41,82,.12);
+  --r-sm:10px; --r-md:16px; --r-lg:24px;
+}
+[data-theme="dark"]{
+  --bg:#0e1016; --bg-grad-1:#151a2e; --bg-grad-2:#1d1630;
+  --surface:#171a23; --surface-2:#1e222d;
+  --text:#eef0f6; --text-2:#a9b0c0; --text-3:#6b7280;
+  --line:#2a2f3c; --line-2:#232836;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.35);
+  --shadow-lg:0 24px 60px rgba(0,0,0,.5);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  background:var(--bg); color:var(--text); line-height:1.65;
+  -webkit-font-smoothing:antialiased; min-height:100vh;
+}
+body::before{
+  content:""; position:fixed; inset:0; z-index:-1;
+  background:
+    radial-gradient(1200px 600px at 15% -10%,var(--bg-grad-1),transparent 60%),
+    radial-gradient(1000px 500px at 95% 5%,var(--bg-grad-2),transparent 55%);
+}
+button{font-family:inherit; cursor:pointer}
+::selection{background:rgba(91,107,214,.22)}
+
+/* ============ 布局 ============ */
+.app{max-width:880px; margin:0 auto; padding:0 18px 80px}
+.topbar{
+  position:sticky; top:0; z-index:30; backdrop-filter:blur(14px);
+  background:color-mix(in srgb,var(--surface) 82%,transparent);
+  border-bottom:1px solid var(--line-2);
+}
+.topbar-in{max-width:880px;margin:0 auto;padding:12px 18px;display:flex;align-items:center;gap:12px}
+.brand{display:flex;align-items:center;gap:9px;font-weight:700;font-size:15px;letter-spacing:.2px}
+.logo{
+  width:28px;height:28px;border-radius:9px;display:grid;place-items:center;color:#fff;font-size:14px;
+  background:linear-gradient(135deg,var(--brand),var(--brand-2));
+  box-shadow:0 4px 12px rgba(91,107,214,.35);
+}
+.spacer{flex:1}
+.ghost-btn{
+  background:transparent;border:1px solid var(--line);color:var(--text-2);
+  padding:6px 11px;border-radius:999px;font-size:12.5px;display:inline-flex;align-items:center;gap:6px;
+  transition:.18s;
+}
+.ghost-btn:hover{border-color:var(--brand);color:var(--brand);background:color-mix(in srgb,var(--brand) 6%,transparent)}
+.screen{display:none;animation:fadeUp .4s ease both}
+.screen.active{display:block}
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+
+/* ============ 卡片 ============ */
+.card{
+  background:var(--surface); border:1px solid var(--line); border-radius:var(--r-lg);
+  box-shadow:var(--shadow); padding:26px;
+}
+.hero{
+  position:relative; overflow:hidden; padding:38px 34px; margin-top:26px;
+  background:linear-gradient(135deg,var(--brand) 0%,var(--brand-2) 65%,var(--brand-3) 130%);
+  color:#fff; border:none;
+}
+.hero::after{
+  content:"";position:absolute;right:-70px;top:-70px;width:260px;height:260px;border-radius:50%;
+  background:rgba(255,255,255,.12);
+}
+.hero::before{
+  content:"";position:absolute;right:60px;bottom:-90px;width:200px;height:200px;border-radius:50%;
+  background:rgba(255,255,255,.08);
+}
+.hero .kicker{opacity:.9;font-size:12.5px;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
+.hero h1{margin:0 0 12px;font-size:30px;line-height:1.3;font-weight:800;letter-spacing:-.3px}
+.hero p{margin:0;opacity:.94;font-size:14.5px;max-width:600px;position:relative;z-index:1}
+.meta-grid{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px;position:relative;z-index:1}
+.meta-chip{
+  background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.28);
+  padding:7px 13px;border-radius:999px;font-size:12.5px;backdrop-filter:blur(6px);
+}
+.sec-title{font-size:13px;font-weight:700;color:var(--text-3);letter-spacing:1.2px;text-transform:uppercase;margin:34px 0 14px}
+
+/* ============ 按钮 ============ */
+.btn{
+  border:none;border-radius:14px;padding:13px 26px;font-size:15px;font-weight:650;
+  background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#fff;
+  box-shadow:0 8px 22px rgba(91,107,214,.34);transition:.2s;
+}
+.btn:hover{transform:translateY(-1px);box-shadow:0 12px 28px rgba(91,107,214,.42)}
+.btn:active{transform:translateY(0)}
+.btn-outline{background:transparent;color:var(--text);border:1px solid var(--line);box-shadow:none}
+.btn-outline:hover{border-color:var(--brand);color:var(--brand);background:color-mix(in srgb,var(--brand) 6%,transparent);box-shadow:none}
+.btn:disabled{opacity:.45;cursor:not-allowed;transform:none;box-shadow:none}
+.btn-sm{padding:9px 16px;font-size:13.5px;border-radius:11px}
+
+/* ============ 答题 ============ */
+.progress-wrap{margin:26px 0 18px}
+.progress-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:9px}
+.progress-head .plabel{font-size:13px;color:var(--text-2);font-weight:600}
+.progress-head .pct{font-size:13px;color:var(--brand);font-weight:700;font-variant-numeric:tabular-nums}
+.bar{height:7px;background:var(--line-2);border-radius:999px;overflow:hidden}
+.bar>i{
+  display:block;height:100%;border-radius:999px;width:0;
+  background:linear-gradient(90deg,var(--brand),var(--brand-2));transition:width .45s cubic-bezier(.4,0,.2,1);
+}
+.qcard{padding:24px 24px 20px;margin-bottom:14px;transition:.2s}
+.qcard:hover{box-shadow:var(--shadow-lg)}
+.qhead{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.qnum{
+  min-width:30px;height:30px;padding:0 8px;border-radius:10px;display:grid;place-items:center;
+  background:color-mix(in srgb,var(--brand) 12%,transparent);color:var(--brand);
+  font-weight:800;font-size:13.5px;font-variant-numeric:tabular-nums;
+}
+.qtag{font-size:11.5px;padding:3px 9px;border-radius:999px;font-weight:650;letter-spacing:.3px}
+.qtag.single{background:color-mix(in srgb,var(--ok) 14%,transparent);color:#0a7a55}
+.qtag.multi{background:color-mix(in srgb,var(--warn) 18%,transparent);color:#96650a}
+.qtag.dim{background:var(--surface-2);color:var(--text-3);border:1px solid var(--line-2)}
+[data-theme="dark"] .qtag.single{color:#34d399}
+[data-theme="dark"] .qtag.multi{color:#fbbf24}
+.qtext{font-size:16.5px;font-weight:620;margin:2px 0 16px;letter-spacing:-.1px}
+.opts{display:flex;flex-direction:column;gap:9px}
+.opt{
+  display:flex;align-items:center;gap:12px;padding:13px 15px;border-radius:14px;
+  border:1.5px solid var(--line);background:var(--surface);cursor:pointer;transition:.16s;
+  font-size:14.5px;color:var(--text-2);
+}
+.opt:hover{border-color:color-mix(in srgb,var(--brand) 55%,var(--line));background:color-mix(in srgb,var(--brand) 4%,var(--surface))}
+.opt input{position:absolute;opacity:0;pointer-events:none}
+.opt .mark{
+  width:20px;height:20px;flex:none;border-radius:50%;border:2px solid var(--line);
+  display:grid;place-items:center;transition:.16s;
+}
+.opt[data-type="multi"] .mark{border-radius:6px}
+.opt .mark::after{content:"";width:9px;height:9px;border-radius:50%;background:#fff;transform:scale(0);transition:.16s}
+.opt[data-type="multi"] .mark::after{border-radius:2px;width:10px;height:10px}
+.opt.sel{border-color:var(--brand);background:color-mix(in srgb,var(--brand) 8%,var(--surface));color:var(--text);font-weight:600}
+.opt.sel .mark{background:var(--brand);border-color:var(--brand)}
+.opt.sel .mark::after{transform:scale(1)}
+.opt:focus-within{box-shadow:0 0 0 3px color-mix(in srgb,var(--brand) 25%,transparent)}
+.opt .letter{font-size:12px;font-weight:800;color:var(--text-3);width:16px;flex:none}
+.opt.sel .letter{color:var(--brand)}
+.quiz-nav{display:flex;gap:10px;align-items:center;margin:22px 0 8px}
+.hint{font-size:12.5px;color:var(--text-3)}
+.hint.err{color:var(--risk);font-weight:600}
+
+/* 答题卡 */
+.sheet-toggle{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+.sheet{display:grid;grid-template-columns:repeat(auto-fill,minmax(34px,1fr));gap:7px;margin-top:14px}
+.sheet button{
+  height:34px;border-radius:9px;border:1px solid var(--line);background:var(--surface);
+  color:var(--text-3);font-size:12.5px;font-weight:650;transition:.15s;font-variant-numeric:tabular-nums;
+}
+.sheet button:hover{border-color:var(--brand);color:var(--brand)}
+.sheet button.done{background:color-mix(in srgb,var(--brand) 12%,transparent);border-color:transparent;color:var(--brand)}
+.sheet button.cur{outline:2px solid var(--brand);outline-offset:1px;color:var(--brand)}
+.sheet button.miss{border-color:color-mix(in srgb,var(--risk) 55%,transparent);color:var(--risk)}
+
+/* ============ 结果页 ============ */
+.res-hero{display:flex;gap:26px;align-items:center;flex-wrap:wrap;padding:28px}
+.ring{position:relative;width:132px;height:132px;flex:none}
+.ring svg{transform:rotate(-90deg)}
+.ring .rv{position:absolute;inset:0;display:grid;place-items:center;text-align:center}
+.ring .rv b{font-size:29px;font-weight:800;letter-spacing:-1px;display:block;line-height:1.1}
+.ring .rv s{font-size:11.5px;color:var(--text-3);text-decoration:none;font-weight:600}
+.res-meta{flex:1;min-width:230px}
+.badge{
+  display:inline-flex;align-items:center;gap:6px;padding:5px 13px;border-radius:999px;
+  font-size:12.5px;font-weight:700;letter-spacing:.4px;margin-bottom:9px;
+}
+.badge.a{background:color-mix(in srgb,var(--ok) 15%,transparent);color:#0a7a55}
+.badge.b{background:color-mix(in srgb,var(--brand) 14%,transparent);color:var(--brand)}
+.badge.c{background:color-mix(in srgb,var(--warn) 17%,transparent);color:#96650a}
+.badge.d{background:color-mix(in srgb,var(--risk) 14%,transparent);color:#b42318}
+[data-theme="dark"] .badge.a{color:#34d399}[data-theme="dark"] .badge.b{color:#a5b0ff}
+[data-theme="dark"] .badge.c{color:#fbbf24}[data-theme="dark"] .badge.d{color:#f87171}
+.res-meta h2{margin:0 0 6px;font-size:20px;font-weight:750}
+.res-meta p{margin:0;font-size:14px;color:var(--text-2)}
+.score-line{display:flex;gap:26px;flex-wrap:wrap;margin-top:16px;padding-top:16px;border-top:1px dashed var(--line)}
+.score-line div{font-size:12.5px;color:var(--text-3)}
+.score-line b{display:block;font-size:19px;color:var(--text);font-weight:750;font-variant-numeric:tabular-nums}
+
+.res-cols{display:grid;grid-template-columns:340px 1fr;gap:16px;align-items:start}
+@media(max-width:760px){.res-cols{grid-template-columns:1fr}.card,.res-hero{padding:20px}.hero h1{font-size:24px}}
+.radar-box{padding:18px 12px 8px;text-align:center}
+.radar-box svg{width:100%;height:auto;max-width:320px}
+.dim-list{display:flex;flex-direction:column;gap:11px}
+.dim-row{padding:15px 17px;border-radius:var(--r-md);border:1px solid var(--line);background:var(--surface);box-shadow:var(--shadow)}
+.dim-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:8px}
+.dim-name{font-size:14.5px;font-weight:700}
+.dim-name small{font-weight:500;color:var(--text-3);font-size:11.5px;margin-left:5px}
+.dim-score{font-size:13px;color:var(--text-2);font-variant-numeric:tabular-nums;white-space:nowrap}
+.dim-score b{font-size:16px;color:var(--text)}
+.dim-bar{height:8px;border-radius:999px;background:var(--line-2);overflow:hidden}
+.dim-bar>i{display:block;height:100%;border-radius:999px;width:0;transition:width .9s cubic-bezier(.34,1.2,.64,1)}
+.dim-lv{font-size:11.5px;font-weight:700;padding:2px 9px;border-radius:999px;margin-left:7px}
+.advice-box{margin-top:11px;padding-top:11px;border-top:1px dashed var(--line);font-size:13.5px;color:var(--text-2)}
+.advice-box .lb{font-size:11.5px;font-weight:750;color:var(--text-3);letter-spacing:.6px;display:block;margin-bottom:4px}
+.advice-box p{margin:0 0 10px}
+.advice-box p:last-child{margin-bottom:0}
+.summary{padding:24px 26px}
+.summary h3{margin:0 0 12px;font-size:17px;font-weight:750;display:flex;align-items:center;gap:8px}
+.summary ul{margin:0;padding-left:19px}
+.summary li{margin-bottom:9px;font-size:14.2px;color:var(--text-2)}
+.summary li b{color:var(--text)}
+.summary li:last-child{margin-bottom:0}
+.tip{font-size:12.5px;color:var(--text-3);margin-top:14px;padding-top:14px;border-top:1px dashed var(--line)}
+details.review{margin-top:16px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-md);padding:4px 18px}
+details.review summary{cursor:pointer;padding:13px 0;font-weight:650;font-size:14.5px;list-style:none;display:flex;align-items:center;gap:8px}
+details.review summary::-webkit-details-marker{display:none}
+details.review summary::before{content:"›";font-size:19px;transition:.2s;color:var(--text-3)}
+details.review[open] summary::before{transform:rotate(90deg)}
+.rv-item{padding:12px 0;border-top:1px solid var(--line-2);font-size:13.5px}
+.rv-item .q{font-weight:620;color:var(--text);margin-bottom:5px}
+.rv-item .a{color:var(--text-2)}
+.rv-item .a em{font-style:normal;color:var(--brand);font-weight:650}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+
+/* toast */
+.toast{
+  position:fixed;left:50%;bottom:34px;transform:translateX(-50%) translateY(20px);
+  background:var(--text);color:var(--surface);padding:11px 20px;border-radius:999px;font-size:13.5px;
+  opacity:0;pointer-events:none;transition:.28s;z-index:80;box-shadow:var(--shadow-lg);
+}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.foot{text-align:center;color:var(--text-3);font-size:12px;margin-top:30px}
+@media print{
+  .topbar,.actions,.quiz-nav,.sheet-toggle,#scr-intro,#scr-quiz{display:none!important}
+  body::before{display:none}.card{box-shadow:none;break-inside:avoid}
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <div class="brand"><span class="logo">✦</span><span>心理测评</span></div>
+    <div class="spacer"></div>
+    <button class="ghost-btn" id="btn-import" title="载入其他测评的 JSON 配置">⤓ 导入测评</button>
+    <button class="ghost-btn" id="btn-theme" title="切换深色/浅色">◐</button>
+  </div>
+</header>
+
+<div class="app">
+  <!-- ========== 介绍页 ========== -->
+  <section class="screen active" id="scr-intro">
+    <div class="card hero">
+      <div class="kicker" id="i-kicker">学习力测评</div>
+      <h1 id="i-title">—</h1>
+      <p id="i-desc">—</p>
+      <div class="meta-grid" id="i-meta"></div>
+    </div>
+    <div class="sec-title">测量维度</div>
+    <div class="dim-list" id="i-dims"></div>
+    <div class="card summary" style="margin-top:16px">
+      <h3>作答说明</h3>
+      <ul>
+        <li>全部题目为<b>选择题</b>，请依据<b>第一反应与真实情况</b>作答，不必权衡“哪个更好”。</li>
+        <li>标注<b>多选</b>的题目可同时选择多个选项，得分按所选选项分值累加。</li>
+        <li>作答过程仅保存在本机页面内存中，<b>不上传任何服务器</b>；可随时导出续答。</li>
+        <li>结果反映的是当前状态倾向，<b>不构成任何诊断</b>，仅供自我探索与调整参考。</li>
+      </ul>
+      <div style="margin-top:20px;display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+        <button class="btn" id="btn-start">开始测评 →</button>
+        <button class="btn btn-outline btn-sm" id="btn-restore" style="display:none">继续上次作答</button>
+      </div>
+    </div>
+    <div class="foot" id="i-foot"></div>
+  </section>
+
+  <!-- ========== 答题页 ========== -->
+  <section class="screen" id="scr-quiz">
+    <div class="progress-wrap">
+      <div class="progress-head">
+        <span class="plabel" id="q-plabel">第 1 页 / 共 6 页</span>
+        <span class="pct" id="q-pct">0%</span>
+      </div>
+      <div class="bar"><i id="q-bar"></i></div>
+    </div>
+    <div id="q-list"></div>
+    <div class="quiz-nav">
+      <button class="btn btn-outline" id="btn-prev">← 上一页</button>
+      <button class="btn" id="btn-next">下一页 →</button>
+      <span class="spacer"></span>
+      <button class="btn btn-outline btn-sm" id="btn-submit" style="display:none">提交并查看结果</button>
+    </div>
+    <div class="quiz-nav" style="margin-top:0">
+      <span class="hint" id="q-hint">当前页题目均需作答后才能继续</span>
+      <span class="spacer"></span>
+      <span class="hint" id="q-count">已答 0 / 30</span>
+    </div>
+    <div class="card" style="margin-top:18px;padding:18px 20px">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <b style="font-size:13.5px">答题卡</b>
+        <span class="hint" style="font-size:11.5px">点击题号可直接跳转</span>
+      </div>
+      <div class="sheet" id="q-sheet"></div>
+    </div>
+  </section>
+
+  <!-- ========== 结果页 ========== -->
+  <section class="screen" id="scr-result">
+    <div class="card res-hero">
+      <div class="ring">
+        <svg viewBox="0 0 120 120" width="132" height="132">
+          <circle cx="60" cy="60" r="52" fill="none" stroke="var(--line-2)" stroke-width="11"/>
+          <circle id="ring-arc" cx="60" cy="60" r="52" fill="none" stroke="url(#g1)" stroke-width="11"
+                  stroke-linecap="round" stroke-dasharray="327" stroke-dashoffset="327"
+                  style="transition:stroke-dashoffset 1.1s cubic-bezier(.3,1,.4,1)"/>
+          <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#5b6bd6"/><stop offset="100%" stop-color="#8b5cf6"/>
+          </linearGradient></defs>
+        </svg>
+        <div class="rv"><div><b id="r-rate">0%</b><s>标准化得分率</s></div></div>
+      </div>
+      <div class="res-meta">
+        <span class="badge b" id="r-badge">—</span>
+        <h2 id="r-title">—</h2>
+        <p id="r-sub">—</p>
+        <div class="score-line">
+          <div>总得分<b id="r-total">0</b></div>
+          <div>题目数<b id="r-qn">0</b></div>
+          <div>维度数<b id="r-dn">0</b></div>
+          <div>得分区间<b id="r-range">0-0</b></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec-title">总体分析与建议</div>
+    <div class="card summary" id="r-summary"></div>
+
+    <div class="sec-title">维度得分与解读</div>
+    <div class="res-cols">
+      <div class="card radar-box"><div id="r-radar"></div></div>
+      <div class="dim-list" id="r-dims"></div>
+    </div>
+
+    <details class="review"><summary>逐题作答回顾</summary><div id="r-review"></div></details>
+
+    <div class="actions">
+      <button class="btn" id="btn-again">重新测评</button>
+      <button class="btn btn-outline" id="btn-copy">复制结果文本</button>
+      <button class="btn btn-outline" id="btn-json">下载结果 JSON</button>
+      <button class="btn btn-outline" id="btn-save">下载作答存档</button>
+      <button class="btn btn-outline" id="btn-print">打印 / 存 PDF</button>
+    </div>
+    <div class="foot">本测评由配置驱动的前端引擎渲染 · 更换 JSON 配置即可生成全新测评 · 结果仅供自我探索参考</div>
+  </section>
+</div>
+
+<input type="file" id="file-import" accept=".json,application/json" style="display:none">
+<input type="file" id="file-restore" accept=".json,application/json" style="display:none">
+<div class="toast" id="toast"></div>
+
+<script>
+/* =========================================================================
+   配置驱动的测评引擎
+   -------------------------------------------------------------------------
+   替换 TEST_DATA 即可生成另一个测评（与题库 Excel 同源 JSON schema）：
+     { id, domain, theme, style, questions:[{no,type,dim,text,
+         options:[{label,text,score}]}],
+       dimensions:[{code,name,desc,bands:[{min,max,level,analysis,advice}]}] }
+   style 支持：频率自评 / 情景选择 / 知识问答 / 轻松趣味（仅影响文案语气）
+   计分：单选=所选选项分；多选=所选选项分累加；反向题已由数据分值表达，
+         引擎不区分正反向，纯按分值累加，因此任何题目组合都能正确算分。
+   ========================================================================= */
+let TEST_DATA = {"id":20,"domain":"学习力","theme":"学习反馈与错题管理","style":"情景选择","questions":[{"no":1,"type":"单选","dim":"D1","text":"作业发回来你得了个还不错的分数，你会","options":[{"label":"A","text":"看看比上次高了多少分","score":3},{"label":"B","text":"只关心分数够不够高","score":1},{"label":"C","text":"看扣分的细节找提升空间","score":4},{"label":"D","text":"满意地收起来这一页翻篇","score":2}]},{"no":2,"type":"单选","dim":"D1","text":"考试后你发现某些题当时模棱两可，你会","options":[{"label":"A","text":"和同学对一下各自的理解","score":3},{"label":"B","text":"主动找老师确认正确的思路","score":4},{"label":"C","text":"等下次上课老师讲到再看","score":2},{"label":"D","text":"自己猜一个答案先往下走","score":1}]},{"no":3,"type":"单选","dim":"D1","text":"老师在课上点评了你作业里的问题，你会","options":[{"label":"A","text":"记下修改方向马上动手改","score":4},{"label":"B","text":"听听就过了下次再说","score":2},{"label":"C","text":"课后找老师问清怎么做更好","score":3},{"label":"D","text":"觉得老师针对自己不太舒服","score":1}]},{"no":4,"type":"单选","dim":"D1","text":"写完一篇作文你会主动征求别人的意见吗","options":[{"label":"A","text":"自己读了觉得还行就不改了","score":1},{"label":"B","text":"交给老师就等评分结果","score":2},{"label":"C","text":"请老师或同学看哪里还要改","score":4},{"label":"D","text":"让同学给提一两句建议","score":3}]},{"no":5,"type":"单选","dim":"D1","text":"做完一套练习却暂时无法核对答案，你会","options":[{"label":"A","text":"带着疑问去找老师或查解析","score":4},{"label":"B","text":"觉得只要做完了就行","score":2},{"label":"C","text":"不确定就先放着下次再说","score":1},{"label":"D","text":"自己反复检查看是否合理","score":3}]},{"no":6,"type":"单选","dim":"D1","text":"向老师请教后他说你基础不太扎实，你会","options":[{"label":"A","text":"据此制定补基础的具体计划","score":4},{"label":"B","text":"有点沮丧但也承认确实是","score":3},{"label":"C","text":"觉得他说得太笼统没信息量","score":1},{"label":"D","text":"反问老师推荐什么练习来补","score":2}]},{"no":7,"type":"单选","dim":"D1","text":"每次作业发回来你更关注分数还是错因","options":[{"label":"A","text":"只关心分数高不高","score":1},{"label":"B","text":"分数和错误都会看","score":2},{"label":"C","text":"先看分数再顺带看错题","score":3},{"label":"D","text":"优先看每道错题的扣分原因","score":4}]},{"no":8,"type":"多选","dim":"D1","text":"以下这些是你主动获取反馈的方式吗（多选）","options":[{"label":"A","text":"找同学互相批改练习卷","score":2},{"label":"B","text":"拿着错题去问老师思路","score":2},{"label":"C","text":"上网搜同一道题的其他解法","score":1},{"label":"D","text":"等老师讲评才知道对错","score":0}]},{"no":9,"type":"单选","dim":"D2","text":"一道数学题做错了，你分析原因时会","options":[{"label":"A","text":"翻到对应知识点看理解偏没偏","score":3},{"label":"B","text":"定位是知识点不熟还是计算失误","score":4},{"label":"C","text":"这题太难不属于我能会的","score":1},{"label":"D","text":"觉得就是粗心下次注意","score":2}]},{"no":10,"type":"单选","dim":"D2","text":"选择题因为概念混淆丢了分，你会","options":[{"label":"A","text":"把每个选项分析一遍为什么错","score":3},{"label":"B","text":"把易混概念的区分点写下来对比","score":4},{"label":"C","text":"把这道题的正确答案记住","score":2},{"label":"D","text":"觉得下次仔细读题就行","score":1}]},{"no":11,"type":"单选","dim":"D2","text":"作文总是写到一半就偏离了题目，你会","options":[{"label":"A","text":"看看每次都是偏到了哪个方向","score":3},{"label":"B","text":"觉得自己没天赋写不好作文","score":1},{"label":"C","text":"把原因归到审题时间不够","score":2},{"label":"D","text":"分析是关键词理解不准还是结构问题","score":4}]},{"no":12,"type":"单选","dim":"D2","text":"英语完形填空总是错掉一半，你会","options":[{"label":"A","text":"把每道正确答案背下来","score":2},{"label":"B","text":"觉得完形填空就是凭感觉","score":1},{"label":"C","text":"归类错题看集中在哪一类","score":3},{"label":"D","text":"分析是词汇不够还是语感问题","score":4}]},{"no":13,"type":"单选","dim":"D2","text":"物理大题总是第一步就卡住，你会","options":[{"label":"A","text":"分析是不知选公式还是看不懂题意","score":4},{"label":"B","text":"回看同类题第一步是怎么切入的","score":3},{"label":"C","text":"大概觉得是练得还不够吧","score":2},{"label":"D","text":"觉得物理大题本来就难就放弃","score":1}]},{"no":14,"type":"单选","dim":"D2","text":"同类错误反反复复出现，你会归因于什么","options":[{"label":"A","text":"说明上次改正没有触及根本问题","score":4},{"label":"B","text":"可能是方法不对要换个角度理解","score":3},{"label":"C","text":"自己天生就学不好这一类","score":1},{"label":"D","text":"见怪不怪无所谓了","score":2}]},{"no":15,"type":"多选","dim":"D2","text":"你分析错题时通常会关注哪些方面（多选）","options":[{"label":"A","text":"具体错在哪个步骤或知识点","score":2},{"label":"B","text":"当时做这道题时间够不够","score":1},{"label":"C","text":"是理解偏差还是记忆模糊","score":2},{"label":"D","text":"只看答案是什么不问为什么","score":0}]},{"no":16,"type":"单选","dim":"D3","text":"发现一道错题之后你的订正方式是","options":[{"label":"A","text":"重新做一遍确认理解再写过程","score":4},{"label":"B","text":"把正确答案抄在旁边","score":2},{"label":"C","text":"写出关键步骤的改正点","score":3},{"label":"D","text":"用红笔把正确答案抄上去","score":1}]},{"no":17,"type":"单选","dim":"D3","text":"订正完一道错题之后你还会做什么","options":[{"label":"A","text":"抄进错题本但很少再翻开","score":2},{"label":"B","text":"隔几天再独立做一遍来检验","score":4},{"label":"C","text":"觉得订正过了就记住了","score":1},{"label":"D","text":"给它标个星号下次再看","score":3}]},{"no":18,"type":"单选","dim":"D3","text":"同类题你已经做错过两次，第三次遇到会","options":[{"label":"A","text":"又按老方法做结果还是错","score":1},{"label":"B","text":"有意识地用总结过的方法处理","score":4},{"label":"C","text":"先停下来回忆之前是怎么改的","score":3},{"label":"D","text":"紧张地反复审题生怕再错","score":2}]},{"no":19,"type":"单选","dim":"D3","text":"你的错题本平时到底使用得怎么样","options":[{"label":"A","text":"记完就忘很少再去回顾","score":2},{"label":"B","text":"记了很多但基本不翻","score":1},{"label":"C","text":"偶尔在考前拿出来看看","score":3},{"label":"D","text":"定期翻看并按掌握程度分类","score":4}]},{"no":20,"type":"单选","dim":"D3","text":"订正时发现老师讲的方法你听不懂，你会","options":[{"label":"A","text":"找种能理解的解法并对比差异","score":4},{"label":"B","text":"硬把老师的步骤背下来","score":1},{"label":"C","text":"觉得能把答案记住就行了","score":2},{"label":"D","text":"课后请教老师到底哪步没懂","score":3}]},{"no":21,"type":"单选","dim":"D3","text":"换了一种方法之后却还是做错，你会","options":[{"label":"A","text":"放弃新方法回到原来的思路","score":2},{"label":"B","text":"找同学或老师看我的思路哪偏了","score":3},{"label":"C","text":"怀疑是不是题目答案有争议","score":1},{"label":"D","text":"继续深挖找到真正的理解断点","score":4}]},{"no":22,"type":"单选","dim":"D3","text":"你怎样处理订正之后仍然没底的题","options":[{"label":"A","text":"在旁边标注待确认找机会问","score":3},{"label":"B","text":"第二天再做一遍验证是否掌握","score":4},{"label":"C","text":"先翻过去反正它不是重点","score":1},{"label":"D","text":"把答案顺一遍觉得有道理就放下","score":2}]},{"no":23,"type":"单选","dim":"D4","text":"一场大考结束之后你通常多久看试卷分析","options":[{"label":"A","text":"等老师讲评时再一起看","score":2},{"label":"B","text":"不太想看怕太打击信心","score":1},{"label":"C","text":"隔几天想起来才去翻","score":3},{"label":"D","text":"当天或隔天趁记忆新鲜就复盘","score":4}]},{"no":24,"type":"单选","dim":"D4","text":"复盘整张试卷的时候你重点看什么","options":[{"label":"A","text":"主要看哪些是粗心造成的","score":2},{"label":"B","text":"把每道错题归类为知识方法审题时间","score":4},{"label":"C","text":"先找出丢分最集中的题型","score":3},{"label":"D","text":"只盯着总分和班级排名","score":1}]},{"no":25,"type":"单选","dim":"D4","text":"分析完一次考试的得失之后你会","options":[{"label":"A","text":"列出薄弱点但不知从哪入手","score":3},{"label":"B","text":"心里想想但行动力不足","score":2},{"label":"C","text":"写成下一阶段可执行的调整计划","score":4},{"label":"D","text":"觉得下次再努力一点就行","score":1}]},{"no":26,"type":"单选","dim":"D4","text":"对考试里发挥失常的部分你会怎么处理","options":[{"label":"A","text":"分析当时状态和原因下次预防","score":4},{"label":"B","text":"回想那段时间复习方法哪里偏了","score":3},{"label":"C","text":"告诉自己这次就是运气不好","score":2},{"label":"D","text":"不愿意再提起这段经历","score":1}]},{"no":27,"type":"单选","dim":"D4","text":"每次考完你会把这次的分数和上次对比吗","options":[{"label":"A","text":"会对比分数但很少深挖原因","score":3},{"label":"B","text":"觉得对比只会让自己更焦虑","score":1},{"label":"C","text":"只看总分有没有提高","score":2},{"label":"D","text":"既看进步也看退步并分析原因","score":4}]},{"no":28,"type":"单选","dim":"D4","text":"考后你会怎样向老师寻求针对性的建议","options":[{"label":"A","text":"觉得老师没法照顾到每个人","score":2},{"label":"B","text":"等老师主动来找学生谈","score":1},{"label":"C","text":"课后顺便问上几句","score":3},{"label":"D","text":"带着试卷和具体问题去找老师","score":4}]},{"no":29,"type":"单选","dim":"D4","text":"你坚持做考后复盘的程度到底如何","options":[{"label":"A","text":"从来都不主动去做复盘","score":1},{"label":"B","text":"只在考得特别差时才复盘","score":2},{"label":"C","text":"偶尔认真分析多数时候略过","score":3},{"label":"D","text":"每次考试都按固定流程复盘","score":4}]},{"no":30,"type":"多选","dim":"D4","text":"以下哪些是你考后复盘时会做的事（多选）","options":[{"label":"A","text":"按题型统计正确率找薄弱点","score":2},{"label":"B","text":"写一条下次考试的具体改进点","score":1},{"label":"C","text":"看完分数就收起来不分析","score":0},{"label":"D","text":"记录考场状态和时间分配","score":2}]}],"dimensions":[{"code":"D1","name":"主动求反馈","desc":"不依赖被动通知而主动获取学习评价的行为","bands":[{"min":7,"max":13,"level":"低位","analysis":"你很少主动去获取外部的反馈，学习的改进主要靠自己摸索或者等老师安排，往往到问题暴露时已经比较滞后。","advice":"每次作业发回来，强制自己找出一个还没弄懂的点去问老师或同学，用这样的小动作慢慢建立起主动求反馈的习惯。"},{"min":14,"max":20,"level":"中位","analysis":"你有时候会主动去请教，但做得不够系统也不够及时，常常要等问题积累得比较多时才去处理。","advice":"给自己定一个反馈节奏，每做完一个模块就主动对照答案找疑问，别等到考试之后才发现有一大片都没把握。"},{"min":21,"max":26,"level":"偏高","analysis":"你能够比较及时地主动获取学习反馈，对自己的薄弱环节也始终保持着一份比较清醒的认知。","advice":"主动求反馈的意识不错，可以再学会问得更具体，不只问答案是什么，而是问我的思路到底是哪一步出了偏差。"},{"min":27,"max":33,"level":"高位","analysis":"你善于主动为自己搭建多条反馈通道，能持续利用外部的评价信息来校准自己的学习方向。","advice":"反馈获取能力比较成熟，只需注意分辨不同来源反馈的分量，别过度依赖外部评价而慢慢弱化了自己的判断。"}]},{"code":"D2","name":"错题归因","desc":"对错误原因进行精确分析和分类的能力","bands":[{"min":6,"max":11,"level":"低位","analysis":"你习惯用粗心或太难这类模糊的理由去概括错误，找不到具体可以改进的方向，错误总是重复出现。","advice":"每道错题试着追问三句话，错在哪一步、为什么会错、我需要什么才能下次不错，用精确归因代替含糊的解释。"},{"min":12,"max":17,"level":"中位","analysis":"你能够初步识别出错误的大致类型，但归类还不够精细，常常把方法层面的问题和知识漏洞混成一团。","advice":"给错题贴上简单的分类标签，比如知识缺失、审题偏差、方法错误或计算失误，让接下来的改进有的放矢。"},{"min":18,"max":23,"level":"偏高","analysis":"你能够比较准确地把错误定位到具体的知识点或者方法环节，做出的归因结果具有实际可操作性。","advice":"归因能力不错，可以尝试把多次同类错误串起来分析背后的根因模式，从改正单道题升级为系统性的修补。"},{"min":24,"max":29,"level":"高位","analysis":"你对错误的分析精确到位，能够快速判断出是理解偏差、记忆模糊还是策略不当并对症做出处理。","advice":"归因精准是高效学习的关键，你还能进一步帮同学一起分析错题，在输出的过程中巩固自己的诊断思维。"}]},{"code":"D3","name":"订正迭代","desc":"把错题改正转化为真正掌握并防止再犯的能力","bands":[{"min":7,"max":12,"level":"低位","analysis":"你的订正偏向走过场，抄个答案或者简单标注一下，缺少真正理解之后的独立验证，同类错误屡次重演。","advice":"改完错题之后隔一天不看答案重做一遍，做不出来就说明还没真懂，再建立间隔回顾制度，订正时标记日期按天复查。"},{"min":13,"max":17,"level":"中位","analysis":"你能够完成基本的订正，但间隔回顾执行得不太严格，记忆慢慢衰减让一部分订正逐渐失效。","advice":"把错题本变成复习计划的一部分，每周固定时间只翻那些做错过的题，用主动回忆代替被动地看一遍。"},{"min":18,"max":22,"level":"偏高","analysis":"你订正之后会安排复习来检验效果，错题的再犯率比较低，改正能够形成一个有效的闭环。","advice":"订正习惯比较好，可以进一步用自己的话给每道错题写一句错因小结，加深加工层次，让记忆保持得更久。"},{"min":23,"max":28,"level":"高位","analysis":"你能把每道错题都转化为一次彻底掌握的机会，认真订正之后极少在同一类型的题目上再犯。","advice":"订正迭代的质量很高，可以把精力从反复订正转向挑战新的题型，把这份掌握效率转化成学习进度上的优势。"}]},{"code":"D4","name":"考后复盘","desc":"考试结束后系统分析得失并转化为行动的习惯","bands":[{"min":7,"max":13,"level":"低位","analysis":"考完之后你倾向于回避去分析试卷，或者只停留在分数层面，很难从这次考试经历里提炼出有效的改进信息。","advice":"从最简单的三个问题开始，这次哪里时间不够、哪一类题错得最多、下次具体改什么，趁记忆还新鲜当天就记录下来。"},{"min":14,"max":20,"level":"中位","analysis":"你有一些基本的复盘行为，但缺少固定的流程和量化的习惯，分析往往比较零散不够系统全面。","advice":"给自己做一个简单的复盘模板，包含正确率统计、错因分布、时间分配和下次调整，让复盘从凭感觉变成走流程。"},{"min":21,"max":26,"level":"偏高","analysis":"你能够在考后比较系统地进行复盘分析，并根据分析出来的结果去调整接下来的学习策略。","advice":"复盘习惯不错，可以再做纵向的对比，把几次考试的错因趋势放在一起看，找出那个长期都没解决的根问题。"},{"min":27,"max":33,"level":"高位","analysis":"你的考后复盘已经成为固定流程，能从每次考试里精准提取改进方向，并有效地落实到行动上。","advice":"复盘能力很成熟，可以进一步加入策略层面的思考，不只是改正错题，更审视整体复习方法本身要不要升级。"}]}],"code":"L020"};
+
+const CONFIG = {
+  pageSize: 5,                 // 每页题数（题目多时分页）
+  requireAnswer: true,         // 是否必须答完当前页
+  levels: [                    // 总分标准化得分率 -> 总体评级（按 (得分-最低分)/(满分-最低分) 判定）
+    { min: .80, name: "优秀",  cls: "a", color: "#10b981" },
+    { min: .62, name: "良好",  cls: "b", color: "#5b6bd6" },
+    { min: .42, name: "一般",  cls: "c", color: "#f59e0b" },
+    { min: 0,   name: "待提升", cls: "d", color: "#ef4444" }
+  ],
+  dimColors: ["#5b6bd6","#8b5cf6","#06b6d4","#f59e0b","#10b981","#ef4444"]
+};
+
+/* ---------------- 引擎 ---------------- */
+const $ = s => document.querySelector(s);
+const $$ = s => Array.from(document.querySelectorAll(s));
+const state = { page: 0, answers: {}, data: null, result: null };
+
+function toast(msg){ const t=$("#toast"); t.textContent=msg; t.classList.add("show");
+  clearTimeout(t._h); t._h=setTimeout(()=>t.classList.remove("show"),2100); }
+
+function qRange(q){
+  const s = q.options.map(o => o.score);
+  if(q.type === "多选") return [ s.reduce((a,b)=>a+Math.min(0,b),0),
+                                 s.filter(x=>x>0).reduce((a,b)=>a+b,0) ];
+  return [ Math.min(...s), Math.max(...s) ];
+}
+function dimRange(d, code){
+  let lo=0, hi=0, n=0;
+  d.questions.forEach(q=>{ if(q.dim===code){ const [a,b]=qRange(q); lo+=a; hi+=b; n++; } });
+  return { lo, hi, n };
+}
+function overallLevel(rate){ return CONFIG.levels.find(l => rate >= l.min) || CONFIG.levels[CONFIG.levels.length-1]; }
+function pickBand(bands, v){
+  const sorted=[...bands].sort((a,b)=>a.min-b.min);
+  for(const b of sorted){ if(v>=b.min && v<=b.max) return b; }
+  return v < sorted[0].min ? sorted[0] : sorted[sorted.length-1];
+}
+
+function compute(d, answers){
+  const dims = d.dimensions.map((x,i)=>{
+    const r = dimRange(d, x.code);
+    let got = 0, answered = 0;
+    d.questions.forEach(q=>{
+      if(q.dim !== x.code) return;
+      const sel = answers[q.no];
+      if(!sel || !sel.length) return;
+      answered++;
+      got += q.type==="多选" ? sel.reduce((a,idx)=>a+q.options[idx].score,0)
+                             : q.options[sel[0]].score;
+    });
+    const band = pickBand(x.bands, got);
+    const span = Math.max(1, r.hi - r.lo);
+    return { ...x, idx:i, lo:r.lo, hi:r.hi, n:r.n, got, answered,
+             rate:Math.max(0,Math.min(1,(got-r.lo)/span)), band };
+  });
+  const lo = dims.reduce((a,x)=>a+x.lo,0), hi = dims.reduce((a,x)=>a+x.hi,0);
+  const total = dims.reduce((a,x)=>a+x.got,0);
+  const answeredQ = Object.values(answers).filter(v=>v && v.length).length;
+  const rate = Math.max(0,Math.min(1,(total-lo)/Math.max(1,hi-lo)));
+  return { dims, lo, hi, total, rate, answeredQ, level: overallLevel(rate) };
+}
+
+/* ---------------- 渲染：介绍页 ---------------- */
+function renderIntro(){
+  const d = state.data;
+  $("#i-kicker").textContent = (d.domain||"心理测评") + " · " + (d.style||"");
+  $("#i-title").textContent = d.theme;
+  $("#i-desc").textContent = d.intro || defaultDesc(d);
+  $("#i-meta").innerHTML = [
+    `共 ${d.questions.length} 题`, `分 ${Math.ceil(d.questions.length/CONFIG.pageSize)} 页`,
+    `${d.dimensions.length} 个维度`, `约 ${Math.max(2,Math.round(d.questions.length/8))} 分钟`,
+    d.style==="知识问答" ? "客观计分" : "自陈量表"
+  ].map(t=>`<span class="meta-chip">${t}</span>`).join("");
+  $("#i-dims").innerHTML = d.dimensions.map((x,i)=>{
+    const r = dimRange(d,x.code);
+    return `<div class="dim-row"><div class="dim-top">
+      <span class="dim-name"><span style="color:${CONFIG.dimColors[i%6]};font-weight:800;margin-right:6px">${String.fromCharCode(65+i)}</span>${x.name}<small>${x.code}</small></span>
+      <span class="dim-score">满分 <b>${r.hi}</b> · ${r.n} 题</span></div>
+      <div style="font-size:13px;color:var(--text-2)">${x.desc}</div></div>`;
+  }).join("");
+  $("#i-foot").textContent = `测评编号 ${d.code || ("#" + String(d.id).padStart(3,"0"))} · 引擎版本 v1.1 · 纯本地运行`;
+  const saved = loadDraft();
+  $("#btn-restore").style.display = saved ? "inline-block" : "none";
+}
+function defaultDesc(d){
+  const names = d.dimensions.map(x=>x.name).join("、");
+  return `本测评为配置驱动的原创量表，从「${names}」${d.dimensions.length} 个维度刻画你的「${d.theme}」，共 ${d.questions.length} 道选择题，完成后将给出总分、维度得分、分数段解读与改进建议。`;
+}
+
+/* ---------------- 渲染：答题 ---------------- */
+function pages(){ const n=state.data.questions.length; const ps=[];
+  for(let i=0;i<n;i+=CONFIG.pageSize) ps.push(state.data.questions.slice(i,i+CONFIG.pageSize)); return ps; }
+function renderQuiz(){
+  const P = pages(), cur = P[state.page];
+  $("#q-plabel").textContent = `第 ${state.page+1} 页 / 共 ${P.length} 页`;
+  const answered = Object.values(state.answers).filter(v=>v&&v.length).length;
+  const pctN = Math.round(answered/state.data.questions.length*100);
+  $("#q-pct").textContent = pctN + "%";
+  $("#q-bar").style.width = pctN + "%";
+  $("#q-count").textContent = `已答 ${answered} / ${state.data.questions.length}`;
+
+  const dimName = c => (state.data.dimensions.find(x=>x.code===c)||{}).name || c;
+  $("#q-list").innerHTML = cur.map((q,ki)=>{
+    const gi = state.page*CONFIG.pageSize + ki + 1;
+    const sel = state.answers[q.no] || [];
+    return `<div class="card qcard">
+      <div class="qhead">
+        <span class="qnum">${gi}</span>
+        <span class="qtag ${q.type==="多选"?"multi":"single"}">${q.type}</span>
+        <span class="qtag dim">${dimName(q.dim)}</span>
+      </div>
+      <div class="qtext">${q.text}</div>
+      <div class="opts" data-q="${q.no}" data-type="${q.type}">
+        ${q.options.map((o,oi)=>`
+          <label class="opt ${sel.includes(oi)?"sel":""}" data-type="${q.type}">
+            <input type="${q.type==="多选"?"checkbox":"radio"}" name="q${q.no}" value="${oi}" ${sel.includes(oi)?"checked":""}>
+            <span class="mark"></span><span class="letter">${o.label}</span><span>${o.text}</span>
+          </label>`).join("")}
+      </div>
+    </div>`;
+  }).join("");
+
+  $$(".opts").forEach(box=>{
+    const no = +box.dataset.q, multi = box.dataset.type === "多选";
+    box.addEventListener("change", e=>{
+      const t = e.target;
+      if(multi){
+        let s = (state.answers[no]||[]).slice();
+        s = Array.from(box.querySelectorAll("input:checked")).map(i=>+i.value).sort((a,b)=>a-b);
+        state.answers[no] = s;
+      }else{
+        state.answers[no] = [+t.value];
+      }
+      saveDraft(); renderQuiz();
+    });
+  });
+
+  $("#btn-prev").disabled = state.page === 0;
+  $("#btn-prev").style.visibility = state.page === 0 ? "hidden" : "visible";
+  const last = state.page === P.length-1;
+  $("#btn-next").style.display = last ? "none" : "inline-block";
+  $("#btn-submit").style.display = last ? "inline-block" : "none";
+  const un = cur.filter(q=>!(state.answers[q.no]||[]).length).map(q=>q.no);
+  $("#q-hint").className = "hint" + (un.length && !last ? " err" : "");
+  $("#q-hint").textContent = last
+    ? (un.length ? `本页还有 ${un.length} 题未作答` : "本页已完成，可提交查看结果")
+    : (un.length ? "当前页题目均需作答后才能继续" : "本页已完成，可进入下一页");
+  $("#q-sheet").innerHTML = state.data.questions.map(q=>{
+    const done = (state.answers[q.no]||[]).length;
+    const first = Math.floor((q.no-1)/CONFIG.pageSize);
+    const cls = [done?"done":"", first===state.page?"cur":"", (!done && first===state.page)?"miss":""].join(" ").trim();
+    return `<button class="${cls}" data-p="${first}" title="第 ${q.no} 题">${q.no}</button>`;
+  }).join("");
+  $$("#q-sheet button").forEach(b=>b.onclick=()=>{ state.page=+b.dataset.p; renderQuiz(); scroll0(); });
+}
+function scroll0(){ window.scrollTo({top:0,behavior:"smooth"}); }
+function goQuiz(page){ $("#scr-intro").classList.remove("active"); $("#scr-result").classList.remove("active");
+  $("#scr-quiz").classList.add("active"); state.page=page||0; renderQuiz(); scroll0(); }
+
+$("#btn-start").onclick = ()=>{ state.answers={}; saveDraft(); goQuiz(0); };
+$("#btn-restore").onclick = ()=>{ const dr=loadDraft(); if(dr){ state.answers=dr.answers||{}; goQuiz(dr.page||0); toast("已恢复上次作答"); } };
+$("#btn-prev").onclick = ()=>{ if(state.page>0){ state.page--; renderQuiz(); scroll0(); } };
+$("#btn-next").onclick = ()=>{
+  const P=pages(), cur=P[state.page];
+  if(CONFIG.requireAnswer){
+    const un = cur.filter(q=>!(state.answers[q.no]||[]).length);
+    if(un.length){ toast(`还有 ${un.length} 题未作答（第 ${un.map(q=>q.no).join("、")} 题）`);
+      const box = document.querySelector(`.opts[data-q="${un[0].no}"]`);
+      if(box){ box.style.animation="none"; void box.offsetWidth;
+        box.animate([{transform:"translateX(0)"},{transform:"translateX(-7px)"},{transform:"translateX(7px)"},{transform:"translateX(0)"}],{duration:280}); }
+      renderQuiz(); return; }
+  }
+  if(state.page<P.length-1){ state.page++; renderQuiz(); scroll0(); }
+};
+$("#btn-submit").onclick = ()=>{
+  const total = state.data.questions.length;
+  const answered = Object.values(state.answers).filter(v=>v&&v.length).length;
+  if(answered < total && CONFIG.requireAnswer){
+    const miss = state.data.questions.filter(q=>!(state.answers[q.no]||[]).length).map(q=>q.no);
+    if(!confirm(`还有 ${miss.length} 题未作答（第 ${miss.slice(0,12).join("、")}${miss.length>12?"…":""} 题）。\n未答题按 0 分计入，确定提交吗？`)) return;
+  }
+  state.result = compute(state.data, state.answers);
+  $("#scr-quiz").classList.remove("active"); $("#scr-result").classList.add("active");
+  renderResult(); scroll0(); clearDraft();
+};
+
+/* ---------------- 渲染：结果 ---------------- */
+function renderResult(){
+  const d = state.data, R = state.result;
+  $("#r-rate").textContent = Math.round(R.rate*100)+"%";
+  setTimeout(()=>{ $("#ring-arc").style.strokeDashoffset = String(327*(1-R.rate)); }, 60);
+  const L = R.level;
+  const badge = $("#r-badge"); badge.textContent = `总体评级 · ${L.name}`; badge.className = "badge "+L.cls;
+  $("#r-title").textContent = d.theme;
+  $("#r-sub").textContent = `你在 ${R.dims.length} 个维度上的表现可概括为：${summarize(R)}`;
+  $("#r-total").textContent = `${R.total} / ${R.hi}`;
+  $("#r-qn").textContent = R.answeredQ;
+  $("#r-dn").textContent = R.dims.length;
+  $("#r-range").textContent = `${R.lo}–${R.hi}`;
+
+  /* 总体分析与建议 */
+  const strong = [...R.dims].sort((a,b)=>b.rate-a.rate)[0];
+  const weak = [...R.dims].sort((a,b)=>a.rate-b.rate)[0];
+  const items = [];
+  items.push(`<b>总体水平：</b>${L.name}（得分率 ${Math.round(R.rate*100)}%，原始分 ${R.total}，区间 ${R.lo}–${R.hi}）。${overallText(d,R,L)}`);
+  items.push(`<b>优势维度：</b>${strong.name}（${strong.got}/${strong.hi} 分，${strong.band.level}）。${strong.band.analysis}`);
+  items.push(`<b>优先改进：</b>${weak.name}（${weak.got}/${weak.hi} 分，${weak.band.level}）。${weak.band.advice}`);
+  R.dims.filter(x=>x!==strong && x!==weak && x.rate<0.6).forEach(x=>{
+    items.push(`<b>也需要关注 ${x.name}：</b>${x.band.advice}`);
+  });
+  if(d.style === "知识问答") items.push(`<b>计分说明：</b>本测评为客观题计分（答对得 1 分），得分率反映各思维领域的正确率，与主观自评不同。`);
+  $("#r-summary").innerHTML = `<h3><span style="color:var(--brand)">◆</span> ${d.theme} · 综合结果解读</h3><ul>${items.map(t=>`<li>${t}</li>`).join("")}</ul>
+    <div class="tip">提示：分数段解读基于该主题的常模化区间设计，用于自我觉察与行动调整；如相关困扰持续存在并影响学习、生活或工作，建议寻求专业人士（心理咨询师 / 医生）的帮助。</div>`;
+
+  /* 维度卡 */
+  $("#r-dims").innerHTML = R.dims.map(x=>{
+    const color = CONFIG.dimColors[x.idx % CONFIG.dimColors.length];
+    return `<div class="dim-row">
+      <div class="dim-top">
+        <span class="dim-name">${x.name}<small>${x.code}</small>
+          <span class="dim-lv" style="background:${hex(color,.13)};color:${color}">${x.band.level}</span></span>
+        <span class="dim-score"><b>${x.got}</b> / ${x.hi} <span style="color:var(--text-3)">· ${Math.round(x.rate*100)}%</span></span>
+      </div>
+      <div class="dim-bar"><i data-w="${(x.rate*100).toFixed(1)}" style="background:linear-gradient(90deg,${color},${hex(color,.75)})"></i></div>
+      <div class="advice-box">
+        <span class="lb">维度解读（${x.band.min}–${x.band.max} 分）</span>
+        <p>${x.band.analysis}</p>
+        <span class="lb">改进建议</span>
+        <p>${x.band.advice}</p>
+      </div></div>`;
+  }).join("");
+  setTimeout(()=>$$("#r-dims .dim-bar>i").forEach(i=>i.style.width=i.dataset.w+"%"), 120);
+  $("#r-radar").innerHTML = radar(R.dims);
+
+  /* 逐题回顾 */
+  const dn = c => (d.dimensions.find(x=>x.code===c)||{}).name||c;
+  $("#r-review").innerHTML = d.questions.map(q=>{
+    const sel = state.answers[q.no]||[];
+    const pts = q.type==="多选" ? sel.reduce((a,i)=>a+q.options[i].score,0)
+                : (sel.length ? q.options[sel[0]].score : 0);
+    const mx = qRange(q)[1];
+    return `<div class="rv-item">
+      <div class="q">Q${q.no} · ${q.text} <span class="qtag dim" style="margin-left:4px">${dn(q.dim)}</span></div>
+      <div class="a">${sel.length ? sel.map(i=>`<em>${q.options[i].label}. ${q.options[i].text}</em>`).join("；") : "<i style='color:var(--text-3)'>未作答</i>"}
+        <span style="color:var(--text-3)">　得分 ${pts}/${mx}</span></div></div>`;
+  }).join("");
+}
+function summarize(R){
+  const s=[...R.dims].sort((a,b)=>b.rate-a.rate);
+  if(R.level.name==="优秀") return `${s[0].name}与${s[1].name}表现突出，整体处于高水平`;
+  if(R.level.name==="良好") return `${s[0].name}较扎实，${s[s.length-1].name}仍有提升空间`;
+  if(R.level.name==="一般") return `${s[0].name}尚可，但${s[s.length-1].name}偏弱，各维度不均衡`;
+  return `各维度普遍偏低，${s[s.length-1].name}是最需要优先突破的环节`;
+}
+function overallText(d,R,L){
+  if(d.style==="知识问答") return `在${R.dims.map(x=>x.name).join("/")}等思维领域，你的正确率${L.name==="优秀"?"很高，推理与规律识别能力扎实":L.name==="良好"?"良好，基础扎实但个别题型易失手":L.name==="一般"?"中等，建议针对薄弱题型专项训练":"偏低，建议从基础方法重新建立"}`;
+  return `整体${L.name==="优秀"?"处于高水平，相关习惯已内化，可尝试带动他人或挑战更高目标"
+    :L.name==="良好"?"较好，多数场景能稳定发挥，个别维度还需刻意练习"
+    :L.name==="一般"?"存在明显波动，建议优先改进下面的维度，用具体工具降低执行阻力"
+    :"偏低，说明当前方法或状态对学习的支撑不足，建议从最小可执行的一步开始调整"}`;
+}
+function hex(c,a){ const n=parseInt(c.slice(1),16); return `rgba(${n>>16&255},${n>>8&255},${n&255},${a})`; }
+
+/* 雷达图（纯 SVG，无外部依赖） */
+function radar(dims){
+  const N=dims.length, W=420, H=330, cx=W/2, cy=158, R=98, LR=R+24;
+  const pt=(i,r)=>{ const a=-Math.PI/2 + i*2*Math.PI/N; return [cx+Math.cos(a)*r, cy+Math.sin(a)*r]; };
+  const clamp=(x,anchor)=> anchor==="end" ? Math.max(x, 58) : anchor==="start" ? Math.min(x, W-58) : x;
+  const rings=[.25,.5,.75,1].map(f=>`<polygon points="${dims.map((_,i)=>pt(i,R*f).join(",")).join(" ")}"
+      fill="none" stroke="var(--line)" stroke-width="1"/>`).join("");
+  const axes=dims.map((x,i)=>{ const [px,py]=pt(i,R);
+    return `<line x1="${cx}" y1="${cy}" x2="${px}" y2="${py}" stroke="var(--line-2)" stroke-width="1"/>`; }).join("");
+  const poly=dims.map((x,i)=>pt(i,Math.max(6,R*x.rate)).join(",")).join(" ");
+  const dots=dims.map((x,i)=>{ const [px,py]=pt(i,Math.max(6,R*x.rate));
+    return `<circle cx="${px}" cy="${py}" r="4" fill="${CONFIG.dimColors[x.idx%6]}" opacity=".95"/>`; }).join("");
+  const labels=dims.map((x,i)=>{
+    const [lx,ly]=pt(i,LR);
+    const anchor = Math.abs(lx-cx)<8 ? "middle" : (lx>cx?"start":"end");
+    const px = clamp(lx,anchor), py = ly + (ly<cy ? -2 : 8);
+    return `<text x="${px}" y="${py}" text-anchor="${anchor}" font-size="11.5" font-weight="600" fill="var(--text-2)">${x.name}</text>
+            <text x="${px}" y="${py+14}" text-anchor="${anchor}" font-size="10.5" fill="var(--text-3)">${Math.round(x.rate*100)}%</text>`;
+  }).join("");
+  return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="维度得分雷达图">
+    ${rings}${axes}
+    <polygon points="${poly}" fill="rgba(91,107,214,.18)" stroke="var(--brand)" stroke-width="2" stroke-linejoin="round"/>
+    ${dots}${labels}</svg>`;
+}
+
+/* ---------------- 存档 / 导入 ---------------- */
+let draft = null;                       // 仅在页面内存中保存（不使用任何浏览器存储 API）
+function saveDraft(){ draft = { id: state.data.id, answers: state.answers, page: state.page }; }
+function loadDraft(){ return draft && draft.id === state.data.id ? draft : null; }
+function clearDraft(){ draft = null; }
+$("#btn-save").onclick = ()=>{ download(`学习测评存档_${safe(state.data.theme)}.json`,
+  JSON.stringify({ kind:"draft", id:state.data.id, theme:state.data.theme, answers:state.answers },null,1)); toast("已下载作答存档"); };
+$("#btn-import").onclick = ()=> $("#file-import").click();
+$("#file-import").onchange = e=>{
+  const f = e.target.files[0]; if(!f) return;
+  f.text().then(t=>{ try{
+      const j = JSON.parse(t);
+      if(!j.questions || !j.dimensions) throw new Error("缺少 questions / dimensions 字段");
+      useData(j); toast("已载入新测评：" + (j.theme||"未命名"));
+    }catch(err){ toast("配置无效：" + err.message); } })
+  .finally(()=> e.target.value="");
+};
+$("#file-restore").onchange = e=>{
+  const f = e.target.files[0]; if(!f) return;
+  f.text().then(t=>{ try{ const j=JSON.parse(t);
+      if(j.id !== state.data.id){ if(!confirm("存档所属测评与当前不同，仍要导入吗？")) return; }
+      state.answers = j.answers||{}; goQuiz(0); toast("已导入存档，继续作答");
+    }catch(err){ toast("存档无效"); } }).finally(()=> e.target.value="");
+};
+function safe(s){ return (s||"test").replace(/[\\/:*?"<>|\s]/g,"_").slice(0,40); }
+function download(name, text){
+  const a=document.createElement("a"); a.href=URL.createObjectURL(new Blob([text],{type:"application/json"}));
+  a.download=name; a.click(); setTimeout(()=>URL.revokeObjectURL(a.href),1500);
+}
+$("#btn-again").onclick = ()=>{ state.answers={}; state.result=null; clearDraft();
+  $("#scr-result").classList.remove("active"); $("#scr-intro").classList.add("active"); renderIntro(); scroll0(); };
+$("#btn-print").onclick = ()=> window.print();
+$("#btn-copy").onclick = ()=>{
+  const R=state.result;
+  const txt=[`${state.data.theme} 测评结果`,
+    `总分：${R.total}/${R.hi}（得分率 ${Math.round(R.rate*100)}%，总体评级 ${R.level.name}）`,"",
+    ...R.dims.map(x=>`【${x.name}】${x.got}/${x.hi} 分 · ${x.band.level}\n  解读：${x.band.analysis}\n  建议：${x.band.advice}`),"",
+    "说明：结果仅供自我探索参考，不构成诊断。"].join("\n");
+  navigator.clipboard?.writeText(txt).then(()=>toast("结果文本已复制")).catch(()=>{
+    const ta=document.createElement("textarea"); ta.value=txt; document.body.appendChild(ta); ta.select();
+    document.execCommand("copy"); ta.remove(); toast("结果文本已复制"); });
+};
+$("#btn-json").onclick = ()=>{
+  const R=state.result;
+  download(`测评报告_${safe(state.data.theme)}.json`, JSON.stringify({
+    theme: state.data.theme, themeId: state.data.id, generatedAt: new Date().toISOString(),
+    total:{ score:R.total, min:R.lo, max:R.hi, rate:+R.rate.toFixed(4), level:R.level.name },
+    dimensions: R.dims.map(x=>({ code:x.code, name:x.name, score:x.got, min:x.lo, max:x.hi,
+      rate:+x.rate.toFixed(4), band:x.band, questions:x.n })),
+    answers: state.answers
+  },null,1)); toast("已下载报告 JSON");
+};
+
+/* ---------------- 主题切换 ---------------- */
+$("#btn-theme").onclick = ()=>{
+  const cur = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+  document.documentElement.dataset.theme = cur;
+};
+
+/* ---------------- 启动 ---------------- */
+function useData(j){
+  state.data = j; state.page = 0; state.answers = {}; state.result = null;
+  document.title = j.theme + " · 心理测评";
+  $("#scr-quiz").classList.remove("active"); $("#scr-result").classList.remove("active");
+  $("#scr-intro").classList.add("active");
+  renderIntro(); scroll0();
+}
+(function boot(){
+  try{
+    if(window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches)
+      document.documentElement.dataset.theme = "dark";
+  }catch(e){}
+  if(!TEST_DATA){ $("#i-title").textContent="未载入测评数据";
+    $("#i-desc").textContent="请点击右上角「导入测评」选择主题 JSON 配置（与题库 Excel 同 schema）。"; return; }
+  state.data = TEST_DATA; renderIntro();
+})();
+</script>
+</body>
+</html>
